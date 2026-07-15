@@ -1,14 +1,14 @@
 export const siteConfig = {
-  name: "Aura Cloud Tao",
-  tagline: "Bridging ancient Taoist wisdom with modern life",
-  description: "Hand-written Taoist talismans by Longhu Mountain gaogong priests. Personalized blessing rituals with filmed consecration, shipped worldwide.",
-  url: "https://auracloudtao.com",
-  whatsapp: "+85256151619",  // ← 替换为你的真实号码
-  whatsappLink: "https://wa.me/85256151619?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20Taoist%20rituals",
-  email: "ritual@auracloudtao.com",
+  name: "Sacred Tao Wisdom",
+  tagline: "Ancient Taoist wisdom for modern life",
+  description: "Authentic Taoist ritual services, Qi Men divination, Feng Shui consultation, and hand-crafted spiritual products — bridging ancient Chinese wisdom with contemporary spiritual practice.",
+  url: "https://sacred-tao-wisdom.com",
+  whatsapp: "+85256151619",
+  whatsappLink: "https://wa.me/85256151619?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20Taoist%20services",
+  email: "hello@sacred-tao-wisdom.com",
   social: {
-    instagram: "https://instagram.com/auracloudtao",
-    facebook: "https://facebook.com/auracloudtao",
+    instagram: "https://instagram.com/sacredtaowisdom",
+    facebook: "https://facebook.com/sacredtaowisdom",
   },
   masterName: "Master Chen Wei",
   masterTitle: "Gaogong Taoist Priest — Longhu Mountain Tianshi Mansion",
@@ -17,8 +17,12 @@ export const siteConfig = {
 
 export const navigation = [
   { label: "Home", href: "/" },
-  { label: "Talismans", href: "/talismans" },
+  { label: "Rituals", href: "/services" },
+  { label: "Divination", href: "/divination" },
+  { label: "Feng Shui", href: "/feng-shui" },
+  { label: "Shop", href: "/shop" },
+  { label: "Culture", href: "/culture" },
+  { label: "Community", href: "/community" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
 ];

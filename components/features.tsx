@@ -1,47 +1,57 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import { categories } from '@/data/talismans';
 
-const categoryImages: Record<string, string> = {
-  wealth: '/images/talisman-wealth.svg',
-  protection: '/images/talisman-protection.svg',
-  health: '/images/talisman-health.svg',
-  luck: '/images/talisman-luck.svg',
-};
+const sections = [
+  {
+    href: "/services",
+    icon: "🪔",
+    title: "Ritual Services",
+    titleCn: "法事服务",
+    desc: "Karmic release, pet memorial, and space energy alignment ceremonies performed at Longhu Mountain",
+  },
+  {
+    href: "/divination",
+    icon: "🗡",
+    title: "Qi Men Divination",
+    titleCn: "奇门问卦",
+    desc: "Ancient Chinese strategic oracle — card readings, energy audits, and classical physiognomy",
+  },
+  {
+    href: "/feng-shui",
+    icon: "☯",
+    title: "Feng Shui",
+    titleCn: "风水堪舆",
+    desc: "Remote space energy consultation combining traditional Feng Shui with Qi Men positioning",
+  },
+  {
+    href: "/shop",
+    icon: "🎴",
+    title: "Spiritual Shop",
+    titleCn: "文创商城",
+    desc: "Qi Men card deck, talisman art, physiognomy mirror — each item consecrated with intention",
+  },
+];
 
 export default function Features() {
   return (
     <section className="section bg-white">
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Why Seekers Trust These Taoist Practices</h2>
-        <p className="section-sub mb-2">One practitioner. One altar. One talisman for your Qi energy and intentions — not mass-produced.</p>
-        <p className="text-center text-sm text-gray-500 italic mb-12">一人一坛一符，正统科仪，非工厂印制</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Explore Our Offerings</h2>
+        <p className="section-sub mb-2">Authentic Taoist practices for the modern seeker — from sacred rituals to spiritual products</p>
+        <p className="text-center text-sm text-gray-500 italic mb-12">古老道家智慧，照进现代生活</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {categories.map((cat) => (
-            <Link key={cat.id} href={`/talismans#cat-${cat.id}`} className="card group hover:border-gold/50 overflow-hidden">
-              <div className="h-32 -mx-6 -mt-6 mb-4 overflow-hidden bg-gray-50 relative">
-                <Image
-                  src={categoryImages[cat.id] || '/images/talisman-placeholder.svg'}
-                  alt={cat.name}
-                  width={200}
-                  height={128}
-                  className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
-                <span className="absolute bottom-2 left-3 text-2xl">{cat.icon}</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2 group-hover:text-accent transition-colors">{cat.name}</h3>
-              <p className="text-sm text-gray-600 mb-1">{cat.description}</p>
-              <p className="text-xs text-gray-400 italic">查看 {cat.name} →</p>
+          {sections.map((s) => (
+            <Link key={s.href} href={s.href} className="card group hover:border-gold/50 text-center gradient-border">
+              <span className="text-4xl mb-4 block">{s.icon}</span>
+              <h3 className="font-bold text-lg mb-1 group-hover:text-accent transition-colors">{s.title}</h3>
+              <p className="text-xs text-gray-500 italic mb-2">{s.titleCn}</p>
+              <p className="text-sm text-gray-600">{s.desc}</p>
             </Link>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <a href="https://wa.me/85256151619?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20Taoist%20rituals" target="_blank" rel="noopener noreferrer" className="btn btn-gold">
-            Receive Your Blessed Talisman
-          </a>
+          <a href="https://wa.me/85256151619?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20Taoist%20services" target="_blank" className="btn btn-gold">Begin Your Journey</a>
         </div>
       </div>
     </section>
