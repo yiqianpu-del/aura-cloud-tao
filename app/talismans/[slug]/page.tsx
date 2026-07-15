@@ -18,10 +18,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const t = talismans.find((t) => t.slug === params.slug);
   if (!t) return {};
-  return {
-    title: `${t.name} — ${t.chineseName} | ${siteConfig.name}`,
-    description: t.description,
-  };
+  return { title: `${t.name} — ${t.chineseName} | ${siteConfig.name}`, description: t.description };
 }
 
 export default function TalismanDetail({ params }: { params: { slug: string } }) {
@@ -40,13 +37,7 @@ export default function TalismanDetail({ params }: { params: { slug: string } })
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="aspect-square bg-cream rounded-sm flex items-center justify-center overflow-hidden border border-gray-200">
-              <Image
-                src={imgSrc}
-                alt={t.name}
-                width={400}
-                height={500}
-                className="w-full h-full object-contain p-4"
-              />
+              <Image src={imgSrc} alt={t.name} width={400} height={500} className="w-full h-full object-contain p-4" />
             </div>
           </div>
           <div>
@@ -54,26 +45,26 @@ export default function TalismanDetail({ params }: { params: { slug: string } })
             <h1 className="text-3xl md:text-4xl font-bold mb-2">{t.name}</h1>
             <p className="text-sm text-gray-500 italic mb-4">{t.chineseName}</p>
             <p className="text-gray-600 mb-6">{t.description}</p>
-
             <div className="mb-6">
               <h3 className="font-semibold mb-3">What this talisman includes:</h3>
-              <ul className="space-y-2">
-                {t.features.map((f, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="text-gold mt-0.5">✓</span> {f}
-                  </li>
-                ))}
-              </ul>
+              <ul className="space-y-2">{t.features.map((f, i) => (<li key={i} className="flex items-start gap-2 text-sm text-gray-600"><span className="text-gold mt-0.5">✓</span> {f}</li>))}</ul>
             </div>
-
             <p className="text-3xl font-bold text-accent mb-2">${t.price}</p>
             <p className="text-xs text-gray-500 mb-6">+ worldwide shipping included</p>
-
-            <a href={siteConfig.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg w-full text-center mb-3">
-              Book on WhatsApp — Reserve Your Talisman
-            </a>
+            <a href={siteConfig.whatsappLink} target="_blank" className="btn btn-gold btn-lg w-full text-center mb-3">Book on WhatsApp — Reserve Your Talisman</a>
             <p className="text-xs text-gray-400 text-center">Full ritual video sent before shipping. Limited daily rituals.</p>
           </div>
+        </div>
+
+        {/* Cross-link to Talisman Decor product */}
+        <div className="mt-16 p-6 bg-cream rounded-sm border border-gray-200">
+          <h2 className="text-xl font-bold mb-3">Display Your Blessing</h2>
+          <p className="text-gray-600 text-sm mb-4">Turn your talisman into a beautiful home art piece or carry the blessing on your phone.</p>
+          <Link href="/shop/talisman-decor" className="btn btn-gold">Explore Talisman Home Decor →</Link>
+        </div>
+
+        <div className="text-center mt-8 pt-8 border-t border-gray-200">
+          <Link href="/talismans" className="text-accent hover:underline">← Back to all talismans</Link>
         </div>
       </div>
     </div>

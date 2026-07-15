@@ -21,8 +21,7 @@ export const navigation = [
   { label: "Divination", href: "/divination" },
   { label: "Feng Shui", href: "/feng-shui" },
   { label: "Shop", href: "/shop" },
-  { label: "Culture", href: "/culture" },
+  { label: "Learn", href: "/learn" },
   { label: "Community", href: "/community" },
   { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
 ];

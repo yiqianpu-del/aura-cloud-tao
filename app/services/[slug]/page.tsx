@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
+import { products } from '@/data/products';
 import { siteConfig } from '@/data/site-config';
 
 const ritualServices = services.filter(s => s.category === 'ritual');
@@ -19,6 +20,10 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 export default function ServiceDetail({ params }: { params: { slug: string } }) {
   const service = ritualServices.find((s) => s.slug === params.slug);
   if (!service) notFound();
+
+  const relatedProds = service.relatedProducts
+    ? products.filter(p => service.relatedProducts?.includes(p.slug))
+    : [];
 
   return (
     <div className="section">
@@ -66,13 +71,17 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
           </div>
         </section>
 
-        {/* Pricing */}
+        {/* Pricing Options */}
         {service.pricing.options && service.pricing.options.length > 0 && (
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Pricing</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {service.pricing.options.map((opt, i) => (
-                <div key={i} className="card text-center"><h3 className="font-bold">{opt.name}</h3><p className="text-2xl font-bold text-accent">${opt.price}</p></div>
+                <div key={i} className="card text-center">
+                  <h3 className="font-bold">{opt.name}</h3>
+                  <p className="text-2xl font-bold text-accent">${opt.price}</p>
+                  <a href={siteConfig.whatsappLink} target="_blank" className="btn btn-gold btn-sm mt-3">Book via WhatsApp</a>
+                </div>
               ))}
             </div>
           </section>
@@ -82,6 +91,43 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">What&apos;s Included</h2>
           <ul className="space-y-2">{service.includes.map((item, i) => (<li key={i} className="flex items-start gap-2 text-sm text-gray-600"><span className="text-gold mt-0.5 shrink-0">✓</span> {item}</li>))}</ul>
+        </section>
+
+        {/* Related Products */}
+        {relatedProds.length > 0 && (
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold mb-6">Complementary Products</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {relatedProds.map((p) => (
+                <Link key={p.id} href={`/shop/${p.slug}`} className="card hover:border-gold/50 group flex gap-4 items-center">
+                  <div className="w-20 h-20 shrink-0 bg-cream rounded overflow-hidden"><Image src={p.image} alt={p.name} width={80} height={80} className="w-full h-full object-contain p-2" /></div>
+                  <div><h3 className="font-bold group-hover:text-accent transition-colors">{p.name}</h3><p className="text-sm text-gray-500">${p.price}</p></div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Recommended Journey */}
+        <section className="mb-12 p-8 bg-cream rounded-sm border border-gray-200">
+          <h2 className="text-2xl font-bold mb-4">Your Journey Continues</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link href="/divination" className="card hover:border-gold/50 group text-center">
+              <span className="text-2xl mb-2 block">🗡</span>
+              <h3 className="font-bold group-hover:text-accent">Get a Reading</h3>
+              <p className="text-xs text-gray-500">Understand your energy with Qi Men divination</p>
+            </Link>
+            <Link href="/feng-shui" className="card hover:border-gold/50 group text-center">
+              <span className="text-2xl mb-2 block">☯</span>
+              <h3 className="font-bold group-hover:text-accent">Harmonize Your Space</h3>
+              <p className="text-xs text-gray-500">Optimize your home or office with Feng Shui</p>
+            </Link>
+            <Link href="/community" className="card hover:border-gold/50 group text-center">
+              <span className="text-2xl mb-2 block">🪷</span>
+              <h3 className="font-bold group-hover:text-accent">Join the Community</h3>
+              <p className="text-xs text-gray-500">Connect with fellow seekers on the path</p>
+            </Link>
+          </div>
         </section>
 
         {/* FAQ */}
@@ -97,8 +143,9 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
           </div>
         </section>
 
-        <div className="text-center pt-8 border-t border-gray-200">
+        <div className="text-center pt-8 border-t border-gray-200 space-y-3">
           <a href={siteConfig.whatsappLink} target="_blank" className="btn btn-primary btn-lg">Book This Ritual on WhatsApp</a>
+          <p className="text-sm text-gray-500"><Link href="/services" className="text-accent hover:underline">← Back to all rituals</Link></p>
         </div>
       </article>
     </div>
