@@ -2,19 +2,14 @@ backend:
   name: github
   repo: yiqianpu-del/aura-cloud-tao
   branch: main
-  base_url: https://api.github.com
 
-# Images uploaded here
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  # ===== Home Page =====
   - name: "homepage"
     label: "🏠 首页"
-    description: "Edit the homepage hero banner and featured sections"
-    editor:
-      preview: false
+    editor: { preview: false }
     files:
       - name: "hero"
         label: "Hero Banner"
@@ -24,13 +19,11 @@ collections:
           - { label: "Hero Subtitle", name: "heroSubtitle", widget: "string" }
           - { label: "Description", name: "heroDescription", widget: "text", required: false }
           - { label: "Background Image", name: "heroBackground", widget: "image", required: false }
-          - { label: "CTA Button Text", name: "ctaText", widget: "string", default: "Begin Your Journey" }
+          - { label: "CTA Button", name: "ctaText", widget: "string", default: "Begin Your Journey" }
 
-  # ===== Site Settings =====
   - name: "settings"
     label: "⚙️ 网站设置"
-    editor:
-      preview: false
+    editor: { preview: false }
     files:
       - name: "general"
         label: "General Settings"
@@ -45,7 +38,6 @@ collections:
           - { label: "Master Bio", name: "masterBio", widget: "text", required: false }
           - { label: "Master Photo", name: "masterImage", widget: "image", required: false }
 
-  # ===== Blog =====
   - name: "blog"
     label: "📝 博客"
     label_singular: "Post"
@@ -56,5 +48,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
