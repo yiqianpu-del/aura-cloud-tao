@@ -1,5 +1,10 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Taoist Wisdom Blog',
+  description: 'Guides, insights, and resources on Taoist practices, talismans, and spiritual living.',
+};
+
 const posts = [
   { slug: "what-is-taoism", title: "What Is Taoism in Simple Terms?", date: "2026-05-15", excerpt: "Taoism is an ancient Chinese spiritual path focused on harmony with nature, inner peace, and balanced energy (Qi)." },
   { slug: "how-to-wear-talisman", title: "How to Wear a Talisman Correctly", date: "2026-06-16", excerpt: "Traditional guidance on wearing and caring for your blessed Taoist talisman." },

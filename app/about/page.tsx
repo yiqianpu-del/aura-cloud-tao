@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import { siteConfig } from '@/data/site-config';
 
+export const metadata = {
+  title: 'About Us',
+  description: 'Learn about our Taoist practitioner and the mission of Aura Cloud Tao.',
+};
+
 export default function AboutPage() {
   return (
     <div className="section">
@@ -21,11 +26,14 @@ export default function AboutPage() {
                 <p>Through education, consultation, and community building, we aim to create a space where Eastern wisdom can flourish and transform lives in the Western world.</p>
               </div>
             </div>
-            <div className="h-[400px] bg-gradient-to-br from-gold/10 to-accent/10 rounded-sm flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-6xl mb-4">☯</p>
-                <p className="text-sm text-gray-400 italic">Longhu Mountain · 龙虎山天师府</p>
-              </div>
+            <div className="h-[400px] rounded-sm overflow-hidden border border-gray-200">
+              <Image
+                src="/images/altar-scene.svg"
+                alt="Longhu Mountain Tianshi Mansion"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -54,8 +62,14 @@ export default function AboutPage() {
           <p className="text-gray-600 mb-8">Meet our dedicated practitioner who brings decades of experience and deep understanding of Taoist arts.</p>
           <div className="card p-8 gradient-border">
             <div className="grid md:grid-cols-3 gap-8 items-center">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-gold/20 to-accent/20 mx-auto flex items-center justify-center">
-                <span className="text-6xl">☯</span>
+              <div className="w-48 h-48 mx-auto overflow-hidden">
+                <Image
+                  src="/images/master-silhouette.svg"
+                  alt={siteConfig.masterName}
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="md:col-span-2">
                 <h3 className="text-2xl font-bold">{siteConfig.masterName}</h3>

@@ -1,5 +1,10 @@
 import { siteConfig } from '@/data/site-config';
 
+export const metadata = {
+  title: 'Contact Us',
+  description: 'Get in touch with Aura Cloud Tao. The fastest way to reach us is through WhatsApp.',
+};
+
 export default function ContactPage() {
   return (
     <div className="section">
@@ -13,7 +18,7 @@ export default function ContactPage() {
           <a href={siteConfig.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg mb-4">
             WhatsApp Us
           </a>
-          <p className="text-sm text-gray-500">We reply within a few hours · Mon-Fri 9:00-17:00 EST</p>
+          <p className="text-sm text-gray-500">We reply within a few hours and on weekends too · Mon-Fri 9:00-17:00 EST</p>
         </div>
 
         <div className="text-sm text-gray-500">

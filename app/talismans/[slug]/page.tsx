@@ -1,15 +1,34 @@
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { talismans } from '@/data/talismans';
 import { siteConfig } from '@/data/site-config';
 
+const categoryImages: Record<string, string> = {
+  wealth: '/images/talisman-wealth.svg',
+  protection: '/images/talisman-protection.svg',
+  health: '/images/talisman-health.svg',
+  luck: '/images/talisman-luck.svg',
+};
+
 export function generateStaticParams() {
   return talismans.map((t) => ({ slug: t.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const t = talismans.find((t) => t.slug === params.slug);
+  if (!t) return {};
+  return {
+    title: `${t.name} — ${t.chineseName} | ${siteConfig.name}`,
+    description: t.description,
+  };
 }
 
 export default function TalismanDetail({ params }: { params: { slug: string } }) {
   const t = talismans.find((t) => t.slug === params.slug);
   if (!t) notFound();
+
+  const imgSrc = categoryImages[t.category] || '/images/talisman-placeholder.svg';
 
   return (
     <div className="section">
@@ -20,11 +39,14 @@ export default function TalismanDetail({ params }: { params: { slug: string } })
 
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <div className="aspect-square bg-gradient-to-br from-gold/10 to-accent/10 rounded-sm flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-6xl mb-4">📜</p>
-                <p className="text-sm text-gray-400">Hand-written on ritual paper</p>
-              </div>
+            <div className="aspect-square bg-cream rounded-sm flex items-center justify-center overflow-hidden border border-gray-200">
+              <Image
+                src={imgSrc}
+                alt={t.name}
+                width={400}
+                height={500}
+                className="w-full h-full object-contain p-4"
+              />
             </div>
           </div>
           <div>

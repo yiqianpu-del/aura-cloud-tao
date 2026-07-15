@@ -1,5 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { talismans, categories } from '@/data/talismans';
+
+const categoryImages: Record<string, string> = {
+  wealth: '/images/talisman-wealth.svg',
+  protection: '/images/talisman-protection.svg',
+  health: '/images/talisman-health.svg',
+  luck: '/images/talisman-luck.svg',
+};
+
+export const metadata = {
+  title: '22 Hand-Written Taoist Talismans',
+  description: 'Browse 22 authentic Taoist talismans hand-written by Longhu Mountain gaogong priests. Personalized blessing rituals with filmed consecration proof.',
+};
 
 export default function TalismansPage() {
   return (
@@ -22,14 +35,30 @@ export default function TalismansPage() {
             </div>
             <p className="text-gray-600 mb-6">{cat.description}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {talismans.filter(t => t.category === cat.id).map((t) => (
-                <Link key={t.id} href={`/talisman/${t.slug}`} className="card hover:border-gold/50 group">
-                  <h3 className="font-bold text-lg group-hover:text-accent transition-colors">{t.name}</h3>
-                  <p className="text-xs text-gray-500 mb-2">{t.chineseName}</p>
-                  <p className="text-sm text-gray-600 mb-3 line-clamp-2">{t.description}</p>
-                  <p className="font-bold text-accent">From ${t.price}</p>
-                </Link>
-              ))}
+              {talismans.filter(t => t.category === cat.id).map((t) => {
+                const imgSrc = categoryImages[t.category] || '/images/talisman-placeholder.svg';
+                return (
+                  <Link key={t.id} href={`/talismans/${t.slug}`} className="card hover:border-gold/50 group">
+                    <div className="flex gap-4 items-start">
+                      <div className="w-16 h-20 shrink-0 rounded overflow-hidden border border-gray-100">
+                        <Image
+                          src={imgSrc}
+                          alt={t.name}
+                          width={64}
+                          height={80}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="min-w-0">
+                        <h3 className="font-bold text-lg group-hover:text-accent transition-colors">{t.name}</h3>
+                        <p className="text-xs text-gray-500 mb-1">{t.chineseName}</p>
+                        <p className="text-sm text-gray-600 mb-1 line-clamp-2">{t.description}</p>
+                        <p className="font-bold text-accent text-sm">From ${t.price}</p>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </section>
         ))}

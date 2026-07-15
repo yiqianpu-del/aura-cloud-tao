@@ -1,10 +1,17 @@
+import Image from 'next/image';
 import { siteConfig } from '@/data/site-config';
 
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center bg-ink overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-ink via-ink/95 to-accent/20"></div>
-      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23c9a96e\' fill-opacity=\'0.15\'%3E%3Cpath d=\'M20 0L40 20L20 40L0 20Z\'/%3E%3C/g%3E%3C/svg%3E")' }}></div>
+      <Image
+        src="/images/altar-scene.svg"
+        alt=""
+        fill
+        className="object-cover opacity-40"
+        priority
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/80"></div>
 
       <div className="container relative z-10 px-4 text-center">
         <p className="text-gold text-sm tracking-[0.3em] uppercase mb-4">Longhu Mountain Tianshi Mansion (龙虎山天师府)</p>

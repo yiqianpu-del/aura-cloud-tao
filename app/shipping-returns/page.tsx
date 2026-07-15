@@ -1,7 +1,7 @@
 export default function ShippingPage() {
   return (
     <div className="section">
-      <div className="container max-w-3xl prose prose-gray">
+      <div className="container max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">Shipping & Returns</h1>
         <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
           <h3 className="text-lg font-bold text-ink">Shipping</h3>
