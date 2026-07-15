@@ -6,8 +6,8 @@ import { schemaTypes } from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'Sacred Tao Wisdom',
-  projectId: import.meta.env.PUBLIC_SANITY_PROJECT_ID || '',
-  dataset: import.meta.env.PUBLIC_SANITY_DATASET || 'production',
+  projectId: 'aaarojtl',
+  dataset: 'production',
   plugins: [structureTool(), visionTool()],
   schema: { types: schemaTypes },
 })
