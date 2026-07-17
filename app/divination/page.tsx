@@ -49,7 +49,7 @@ export default function DivinationPage() {
           ))}
         </div>
 
-        <div className="text-center"><a href="https://wa.me/85256151619?text=I'd%20like%20a%20Qi%20Men%20reading" target="_blank" className="btn btn-primary btn-lg">{s.divinationPage.cta}</a></div>
+        <div className="text-center"><a href="/api/redirect" className="btn btn-primary btn-lg">{s.divinationPage.cta}</a></div>
       </div>
     </div>
   );

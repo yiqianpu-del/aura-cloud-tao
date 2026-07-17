@@ -27,7 +27,7 @@ export default function HowItWorks() {
           </div>
         </div>
         <div className="text-center mt-16">
-          <a href="https://wa.me/85256151619?text=Hello%2C%20I%27d%20like%20to%20reserve%20a%20ritual%20slot" target="_blank" className="btn btn-primary btn-lg">{h.ctaText}</a>
+          <a href="/api/redirect" className="btn btn-primary btn-lg">{h.ctaText}</a>
         </div>
       </div>
     </section>

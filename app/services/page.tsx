@@ -42,7 +42,7 @@ export default function ServicesPage() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <a href="https://wa.me/85256151619?text=I'd%20like%20to%20learn%20about%20your%20Taoist%20ritual%20services" target="_blank" className="btn btn-primary btn-lg">{s.cta}</a>
+          <a href="/api/redirect" className="btn btn-primary btn-lg">{s.cta}</a>
         </div>
       </div>
     </div>

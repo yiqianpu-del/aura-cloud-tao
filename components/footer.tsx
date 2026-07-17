@@ -45,7 +45,7 @@ export default function Footer() {
             <li><Link href="/community" className="hover:text-gold transition-colors">Community</Link></li>
             <li><Link href="/about" className="hover:text-gold transition-colors">About</Link></li>
             <li><Link href="/contact" className="hover:text-gold transition-colors">Contact</Link></li>
-            <li><a href={siteConfig.whatsappLink} target="_blank" className="hover:text-gold transition-colors">WhatsApp</a></li>
+            <li><a href="/api/redirect" className="hover:text-gold transition-colors">WhatsApp</a></li>
             <li><Link href="/privacy" className="hover:text-gold transition-colors">Privacy</Link></li>
             <li><Link href="/terms" className="hover:text-gold transition-colors">Terms</Link></li>
           </ul>

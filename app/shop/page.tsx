@@ -27,7 +27,7 @@ export default function ShopPage() {
             </Link>
           ))}
         </div>
-        <div className="text-center mt-12"><a href="https://wa.me/85256151619?text=I'd%20like%20to%20browse%20your%20shop" target="_blank" className="btn btn-primary btn-lg">{s.cta}</a></div>
+        <div className="text-center mt-12"><a href="/api/redirect" className="btn btn-primary btn-lg">{s.cta}</a></div>
       </div>
     </div>
   );

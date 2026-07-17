@@ -15,7 +15,7 @@ export default function Packages() {
               <h3 className="font-bold text-xl mb-2">{pkg.name}</h3>
               <p className="text-3xl font-bold text-accent mb-4">${pkg.price}<span className="text-sm text-gray-400">+</span></p>
               <p className="text-sm text-gray-600 mb-6">{pkg.description}</p>
-              <a href={waBase + encodeURIComponent(pkg.name)} target="_blank" className="btn btn-gold w-full">Book on WhatsApp</a>
+              <a href="/api/redirect" className="btn btn-gold w-full">Book on WhatsApp</a>
             </div>
           ))}
         </div>

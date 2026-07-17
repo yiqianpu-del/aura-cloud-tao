@@ -19,7 +19,7 @@ export default function Features() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <a href="https://wa.me/85256151619?text=Hello%2C%20I%27d%20like%20to%20learn%20more" target="_blank" className="btn btn-gold">Begin Your Journey</a>
+          <a href="/api/redirect" className="btn btn-gold">Begin Your Journey</a>
         </div>
       </div>
     </section>

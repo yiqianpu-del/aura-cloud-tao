@@ -23,7 +23,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href={siteConfig.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-sm hidden md:inline-flex">
+          <a href="/api/redirect" className="btn btn-gold btn-sm hidden md:inline-flex">
             Book on WhatsApp
           </a>
           <button onClick={() => setOpen(!open)} className="md:hidden p-2" aria-label="Menu">
@@ -39,7 +39,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <a href={siteConfig.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-gold w-full text-center mt-4">Book on WhatsApp</a>
+          <a href="/api/redirect" className="btn btn-gold w-full text-center mt-4">Book on WhatsApp</a>
         </div>
       )}
     </header>

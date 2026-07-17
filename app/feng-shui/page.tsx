@@ -46,7 +46,7 @@ export default function FengShuiPage() {
           </Link>
         )}
 
-        <div className="text-center mt-12"><a href="https://wa.me/85256151619?text=I'd%20like%20a%20Feng%20Shui%20consultation" target="_blank" className="btn btn-primary btn-lg">{s.fengshuiPage.cta}</a></div>
+        <div className="text-center mt-12"><a href="/api/redirect" className="btn btn-primary btn-lg">{s.fengshuiPage.cta}</a></div>
       </div>
     </div>
   );
