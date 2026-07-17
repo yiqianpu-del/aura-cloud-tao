@@ -12,7 +12,6 @@ public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
 # 本地开发时使用测试模式
-local_backend: true
 
 collections:
   - name: "site"
