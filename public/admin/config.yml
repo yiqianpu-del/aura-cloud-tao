@@ -2,11 +2,17 @@ backend:
   name: github
   repo: yiqianpu-del/aura-cloud-tao
   branch: main
-  base_url: https://api.github.com
+  # 使用 Decap CMS 官方提供的 OAuth 代理服务
+  # 不需要你自己去 GitHub 创建 OAuth App
+  base_url: https://api.decap-cms.app
+  auth_endpoint: auth
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 publish_mode: editorial_workflow
+
+# 本地开发时使用测试模式
+local_backend: true
 
 collections:
   - name: "site"
@@ -39,7 +45,6 @@ collections:
 
   - name: "homepage"
     label: "🏠 首页"
-    editor: { preview: false }
     files:
       - name: "hero"
         label: "Hero 大横幅"
@@ -53,7 +58,7 @@ collections:
           - { label: "背景图片", name: "homepage.hero.backgroundImage", widget: "image" }
 
       - name: "features"
-        label: "四大板块 (Features)"
+        label: "四大板块"
         file: "data/content/homepage.json"
         format: "json"
         fields:
@@ -71,7 +76,7 @@ collections:
               - { label: "链接", name: "href", widget: "string" }
 
       - name: "howitworks"
-        label: "仪式流程 (How It Works)"
+        label: "仪式流程"
         file: "data/content/homepage.json"
         format: "json"
         fields:
@@ -125,7 +130,6 @@ collections:
 
   - name: "services"
     label: "🕯️ 法事服务"
-    editor: { preview: false }
     files:
       - name: "page"
         label: "服务列表页"
@@ -193,7 +197,6 @@ collections:
 
   - name: "shop"
     label: "🛍️ 商城页"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "商城页面内容"
@@ -207,7 +210,6 @@ collections:
 
   - name: "talismans"
     label: "📿 符箓页"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "符箓页面内容"
@@ -227,7 +229,6 @@ collections:
 
   - name: "about"
     label: "🙏 关于我们"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "关于页面"
@@ -242,7 +243,6 @@ collections:
             fields:
               - { label: "标题", name: "title", widget: "string" }
               - { label: "描述", name: "description", widget: "text" }
-              - { label: "图标", name: "icon", widget: "string", required: false }
           - label: "核心价值观"
             name: "about.values"
             widget: "list"
@@ -250,7 +250,6 @@ collections:
             fields:
               - { label: "标题", name: "title", widget: "string" }
               - { label: "描述", name: "description", widget: "text" }
-              - { label: "图标", name: "icon", widget: "string", required: false }
           - label: "大师介绍"
             name: "about.practitioner"
             widget: "object"
@@ -262,7 +261,6 @@ collections:
 
   - name: "learn"
     label: "📖 道学文化"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "道学页面"
@@ -284,7 +282,6 @@ collections:
 
   - name: "community"
     label: "👥 灵性社群"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "社群页面"
@@ -301,7 +298,6 @@ collections:
             fields:
               - { label: "标题", name: "title", widget: "string" }
               - { label: "描述", name: "desc", widget: "text" }
-              - { label: "图标", name: "icon", widget: "string", required: false }
               - { label: "图片", name: "image", widget: "image", required: false }
           - label: "详细内容"
             name: "community.details"
@@ -313,7 +309,6 @@ collections:
 
   - name: "culture"
     label: "🏮 道家文化"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "文化页面"
@@ -340,7 +335,6 @@ collections:
 
   - name: "blog"
     label: "📝 博客"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "博客页"
@@ -363,7 +357,6 @@ collections:
 
   - name: "contact"
     label: "📞 联系我们"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "联系页面"
@@ -376,14 +369,10 @@ collections:
           - { label: "卡片文字", name: "contact.cardText", widget: "text" }
           - { label: "按钮文字", name: "contact.ctaText", widget: "string", required: false }
           - { label: "回复时间", name: "contact.responseTime", widget: "string", required: false }
-          - { label: "邮箱标签", name: "contact.emailLabel", widget: "string", required: false }
-          - { label: "营业时间标签", name: "contact.hoursLabel", widget: "string", required: false }
           - { label: "营业时间", name: "contact.hours", widget: "string", required: false }
-          - { label: "WhatsApp 直链", name: "contact.ctaText", widget: "string", required: false }
 
   - name: "faq"
     label: "❓ 常见问题"
-    editor: { preview: false }
     files:
       - name: "content"
         label: "FAQ 页面"
