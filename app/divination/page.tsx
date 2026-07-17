@@ -4,6 +4,7 @@ import { services } from '@/data/services';
 import { products } from '@/data/products';
 import siteContent from '@/data/siteContent.json';
 import ConnectCta from '@/components/connect-cta';
+import FreeReading from '@/components/free-reading';
 
 const s = siteContent.services;
 
@@ -50,7 +51,9 @@ export default function DivinationPage() {
           ))}
         </div>
 
-        <ConnectCta source="divination" variant="banner" />
+        <FreeReading variant="section" />
+
+                <ConnectCta source="divination" variant="banner" />
       </div>
     </div>
   );
