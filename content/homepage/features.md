@@ -1,0 +1,18 @@
+---
+section1Title: "Ritual Services"
+section1Cn: "法事服务"
+section1Desc: "Karmic release, pet memorial, and space energy alignment ceremonies performed at Longhu Mountain"
+section1Href: "/services"
+section2Title: "Qi Men Divination"
+section2Cn: "奇门问卦"
+section2Desc: "Ancient Chinese strategic oracle — card readings, energy audits, and classical physiognomy"
+section2Href: "/divination"
+section3Title: "Feng Shui"
+section3Cn: "风水堪舆"
+section3Desc: "Remote space energy consultation combining traditional Feng Shui with Qi Men positioning"
+section3Href: "/feng-shui"
+section4Title: "Spiritual Shop"
+section4Cn: "文创商城"
+section4Desc: "Qi Men card deck, talisman art, physiognomy mirror — each item consecrated with intention"
+section4Href: "/shop"
+---

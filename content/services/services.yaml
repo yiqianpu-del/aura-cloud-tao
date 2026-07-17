@@ -1,0 +1,152 @@
+services:
+  - slug: "karmic-release"
+    title: "Karmic Release & Annual Blessing Ritual"
+    titleCn: "业力释放与流年护持仪式"
+    category: "ritual"
+    tagline: "Release karmic burdens and align with your yearly destiny"
+    description: "A powerful annual ritual performed at the Longhu Mountain altar. The priest inscribes your name and birth information, performs a karmic clearing ceremony, and blesses your path for the year ahead. This is our signature high-value service — combining deep spiritual clearing with personalized yearly protection."
+    whoNeedsIt:
+      - "Feeling stuck in recurring patterns or cycles"
+      - "Going through a major life transition"
+      - "Seeking spiritual protection for the coming year"
+      - "Experiencing persistent bad luck or obstacles"
+      - "Wanting to honor ancestors and clear ancestral karma"
+    process:
+      - step: 1
+        title: "Submission & Intention Setting"
+        description: "You provide your name, birth date, and intention. The priest notes your request on the altar."
+      - step: 2
+        title: "Altar Preparation"
+        description: "The ritual space is prepared at Longhu Mountain — incense lit, offerings arranged, the talisman paper laid out."
+      - step: 3
+        title: "Karmic Clearing Ceremony"
+        description: "The priest chants clearing scripture and performs the ritual on your behalf."
+      - step: 4
+        title: "Annual Blessing & Talisman Writing"
+        description: "Your yearly protection talisman is hand-written and consecrated with your name and intention."
+      - step: 5
+        title: "Filmed Proof"
+        description: "The complete ritual is filmed and sent to you — showing your name on the altar, brush strokes, and consecration."
+    pricing:
+      startingFrom: 499
+      options:
+        - name: "Basic — Annual Blessing"
+          price: 499
+        - name: "Premium — Karmic Release + Annual Blessing"
+          price: 799
+        - name: "Deluxe — Full Package with Home Talisman Set"
+          price: 1299
+    delivery: "Video proof sent within 5-7 business days"
+    includes:
+      - "Personalized annual blessing talisman"
+      - "Full ritual video"
+      - "Care and placement instructions"
+      - "Premium shipping worldwide"
+    image: "/images/talisman-placeholder.svg"
+    faq:
+      - q: "How is this different from a regular talisman order?"
+        a: "This is a full ceremony — not just a talisman consecration. It includes chanted scripture, karmic clearing, and personalized yearly blessing."
+      - q: "Do I need to be present?"
+        a: "No. The ritual is performed at the Longhu Mountain altar on your behalf. Your information is presented at the altar."
+    relatedProducts:
+      - "talisman-decor"
+  
+  - slug: "spatial-qi-aligner"
+    title: "Spatial Qi Aligner"
+    titleCn: "空间理气阵法底盘"
+    category: "ritual"
+    tagline: "Harmonize your living space with an ancient Qi energy alignment tool"
+    description: "The Spatial Qi Aligner is a hand-crafted Taoist energy device that harmonizes Qi flow in your home or workspace. Based on ancient Feng Shui principles combined with Qi Men Dun Jia strategic positioning, our gaogong priest consecrates the device at the Longhu Mountain altar specifically for your space before shipping."
+    whoNeedsIt:
+      - "Your home feels stagnant or heavy"
+      - "Sleep quality has declined"
+      - "Business or workspace lacks energy flow"
+      - "You've moved into a new space"
+      - "You want to optimize your environment for specific goals"
+    process:
+      - step: 1
+        title: "Space Consultation"
+        description: "You share details about your space — photos, layout, and your intentions."
+      - step: 2
+        title: "Qi Men Positioning"
+        description: "The priest determines the optimal placement using Qi Men Dun Jia strategic timing."
+      - step: 3
+        title: "Hand-crafting & Consecration"
+        description: "The Qi Aligner is crafted and consecrated at the altar for your specific space."
+      - step: 4
+        title: "Delivery with Placement Guide"
+        description: "You receive the Qi Aligner with detailed placement instructions and the consecration video."
+    pricing:
+      startingFrom: 299
+    delivery: "Shipped within 7-10 business days"
+    includes:
+      - "Hand-crafted Qi Aligner device"
+      - "Placement guide"
+      - "Consecration ritual video"
+      - "Care instructions"
+    image: "/images/talisman-placeholder.svg"
+    faq:
+      - q: "Can I use this in my office?"
+        a: "Yes, the Qi Aligner works for any space — home, office, or commercial."
+      - q: "How is it consecrated for my space?"
+        a: "You provide details about your space and intention. The priest performs the consecration with these specifics at the Longhu Mountain altar."
+    relatedProducts:
+      - "qi-aligner"
+  
+  - slug: "pet-memorial"
+    title: "SoulCompanion Memorial Chest"
+    titleCn: "万物灵宠雅化归藏匣"
+    category: "ritual"
+    tagline: "A sacred Taoist farewell for your beloved companion"
+    description: "A beautifully hand-crafted memorial chest combined with a Taoist soul-transition ceremony for your beloved companion. The chest serves as a sacred vessel for their memory, while the ceremony guides their spirit with peace and dignity. Each chest is personalized with your companion's name and crafted with traditional joinery."
+    whoNeedsIt:
+      - "You've recently lost a beloved pet"
+      - "You want a meaningful, spiritual farewell"
+      - "You seek a physical memorial to honor their presence"
+      - "You believe in the continuity of consciousness"
+    process:
+      - step: 1
+        title: "Share Your Companion's Story"
+        description: "You provide your companion's name, a photo, and a memory you'd like honored."
+      - step: 2
+        title: "Personalization"
+        description: "Your companion's name is inscribed on the chest. The priest prepares the ceremony."
+      - step: 3
+        title: "Soul-Transition Ceremony"
+        description: "Performed at the Longhu Mountain altar — guiding your companion's spirit with peace."
+      - step: 4
+        title: "Delivery of Chest & Video"
+        description: "You receive the memorial chest and the full ceremony video."
+    pricing:
+      startingFrom: 349
+    delivery: "Shipped within 7-10 business days"
+    includes:
+      - "Hand-crafted memorial chest (6x6x4 inches)"
+      - "Personalized name card"
+      - "Soul-transition ceremony"
+      - "Full ritual video"
+    image: "/images/talisman-placeholder.svg"
+    faq:
+      - q: "What can I put inside the chest?"
+        a: "Ashes, collar, photos, favorite toys, or written memories — the chest is designed to hold your companion's mementos."
+      - q: "Is the ceremony performed regardless of my companion's species?"
+        a: "Yes, the Taoist soul-transition ceremony honors all sentient beings."
+    relatedProducts:
+      - "pet-memorial-chest"
+
+serviceCategories:
+  - id: "ritual"
+    name: "Ritual Services"
+    nameCn: "法事服务"
+    description: "Sacred Taoist rituals performed at Longhu Mountain Tianshi Mansion — include full video proof."
+    icon: "🪔"
+  - id: "divination"
+    name: "Qi Men Divination"
+    nameCn: "奇门问卦"
+    description: "Ancient Chinese strategic oracle using the Qi Men Dun Jia divination system."
+    icon: "🗡"
+  - id: "fengshui"
+    name: "Feng Shui"
+    nameCn: "风水堪舆"
+    description: "Remote space energy consultation combining Feng Shui with Qi Men positioning."
+    icon: "☯"

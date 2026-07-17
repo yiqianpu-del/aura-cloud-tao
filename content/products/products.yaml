@@ -1,0 +1,102 @@
+products:
+  - slug: "qi-men-deck"
+    name: "The Cosmic Matrix: Qi Men Card Deck"
+    nameCn: "东方策略奇门卡牌限定版"
+    categories: ["divination", "shop"]
+    price: 89
+    tagline: "Limited edition Qi Men Dun Jia card deck — ancient Chinese strategy in your hands"
+    description: "The Cosmic Matrix is a revolutionary card deck that translates the complex Qi Men Dun Jia system into an intuitive 81-card oracle."
+    features:
+      - "81 uniquely designed cards"
+      - "Guidebook with 5 spread types"
+      - "Durable premium card stock"
+      - "Drawstring silk pouch"
+      - "QR code access to video tutorials"
+    includes:
+      - "81 Qi Men oracle cards"
+      - "Full-color guidebook (120 pages)"
+      - "Silk drawstring pouch"
+      - "Quick reference card"
+      - "Access to online video tutorials"
+    image: "/images/talisman-placeholder.svg"
+    isLimitedEdition: true
+  - slug: "talisman-decor"
+    name: "Sacred Talisman Art — Home Decor & Phone Energy Stickers"
+    nameCn: "符箓文创家居摆件及手机能量贴纸"
+    categories: ["shop"]
+    price: 79
+    tagline: "Sacred talisman art for your home and daily life — with blessing video"
+    description: "Beautifully designed talisman art pieces for modern living."
+    features:
+      - "Authentic hand-written talisman"
+      - "Framed art piece for home display"
+      - "Phone energy sticker"
+      - "Full consecration ceremony"
+      - "Care instructions"
+    includes:
+      - "Framed talisman art piece"
+      - "Phone energy sticker"
+      - "Full consecration video"
+      - "Placement guide"
+      - "Premium packaging"
+    image: "/images/talisman-placeholder.svg"
+  - slug: "physiognomy-mirror"
+    name: "The Mirror of Self-Discovery"
+    nameCn: "中式美学相学/手相镜"
+    categories: ["shop"]
+    price: 99
+    tagline: "Learn classical Chinese face reading with this hand-crafted study mirror"
+    description: "A beautifully crafted hand mirror inscribed with classical Chinese physiognomy markers."
+    features:
+      - "Hand-crafted brass-framed mirror (6-inch)"
+      - "Classical physiognomy markers on frame"
+      - "Study guide book (60 pages)"
+      - "Five Element face map"
+      - "Luxury gift box"
+    includes:
+      - "Brass-framed mirror"
+      - "Study guide book"
+      - "Five Element face map"
+      - "Storage pouch"
+      - "Gift box"
+    image: "/images/talisman-placeholder.svg"
+  - slug: "qi-aligner"
+    name: "Spatial Qi Aligner"
+    nameCn: "空间理气阵法底盘"
+    categories: ["fengshui", "shop", "services"]
+    price: 299
+    tagline: "Hand-crafted Taoist energy harmonization device for your space"
+    description: "A hand-crafted Taoist energy device that harmonizes Qi flow in your home or workspace."
+    features:
+      - "Hand-crafted from natural materials"
+      - "Consecrated for your space"
+      - "Placement guide included"
+      - "Full consecration ritual video"
+      - "Works for any room or office"
+    includes:
+      - "Qi Aligner device"
+      - "Placement guide"
+      - "Consecration video"
+      - "Care instructions"
+      - "Premium packaging"
+    image: "/images/talisman-placeholder.svg"
+  - slug: "pet-memorial-chest"
+    name: "SoulCompanion Memorial Chest"
+    nameCn: "万物灵宠雅化归藏匣"
+    categories: ["shop", "services"]
+    price: 349
+    tagline: "A sacred Taoist farewell for your beloved companion"
+    description: "A beautifully hand-crafted memorial chest combined with a Taoist soul-transition ceremony."
+    features:
+      - "Hand-crafted wooden chest"
+      - "Personalized with companion's name"
+      - "Taoist soul-transition ceremony"
+      - "Full ritual video proof"
+      - "Room for ashes/collar/photos"
+    includes:
+      - "Memorial chest"
+      - "Personalized name card"
+      - "Soul-transition ceremony"
+      - "Ritual video"
+      - "Memory card"
+    image: "/images/talisman-placeholder.svg"
