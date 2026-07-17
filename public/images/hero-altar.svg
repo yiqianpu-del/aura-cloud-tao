@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1024">
   <defs>
     <radialGradient id="cosmicGlow" cx="50%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#6a4ea0" stop-opacity="0.8"/>
-      <stop offset="30%" stop-color="#4a3070" stop-opacity="0.6"/>
-      <stop offset="60%" stop-color="#3a3070" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#3a3070" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#7a5aae" stop-opacity="0.7"/>
+      <stop offset="30%" stop-color="#5a4080" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#3a2a60" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#2a1a50" stop-opacity="0.85"/>
     </radialGradient>
     <radialGradient id="altarGlow" cx="50%" cy="75%" r="40%">
-      <stop offset="0%" stop-color="#c9a96e" stop-<use href="#bagua-kun" opacity="0.45"/>
-      <stop offset="50%" stop-color="#8b6914" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#050510" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#d4b87a" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#a08040" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2a1a50" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="smokeGrad" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#c9a96e" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#c9a96e" stop-opacity="0.06"/>
-      <stop offset="70%" stop-color="#8b7355" stop-opacity="0.03"/>
-      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#d4b87a" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#d4b87a" stop-opacity="0.08"/>
+      <stop offset="70%" stop-color="#a08060" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#d4b87a" stop-opacity="0"/>
     </linearGradient>
     <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="blur"/>
@@ -26,34 +26,34 @@
     </filter>
     <g id="bagua-qian">
       <line x1="0" y1="0" x2="40" y2="0" stroke="#d4b87a" stroke-width="3"/>
-      <line x1="0" y1="12" x2="40" y2="12" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="24" x2="40" y2="24" stroke="#c9a96e" stroke-width="3"/>
+      <line x1="0" y1="12" x2="40" y2="12" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="24" x2="40" y2="24" stroke="#d4b87a" stroke-width="3"/>
     </g>
     <g id="bagua-kun">
-      <line x1="0" y1="0" x2="40" y2="0" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="0" x2="18" y2="0" stroke="#3a3070" stroke-width="3"/>
-      <line x1="0" y1="12" x2="40" y2="12" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="0" x2="18" y2="0" stroke="#1a1530" stroke-width="3"/>
-      <line x1="0" y1="24" x2="40" y2="24" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="24" x2="18" y2="24" stroke="#1a1530" stroke-width="3"/>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="0" x2="18" y2="0" stroke="#2a1a50" stroke-width="3"/>
+      <line x1="0" y1="12" x2="40" y2="12" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="12" x2="18" y2="12" stroke="#2a1a50" stroke-width="3"/>
+      <line x1="0" y1="24" x2="40" y2="24" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="24" x2="18" y2="24" stroke="#2a1a50" stroke-width="3"/>
     </g>
     <g id="bagua-li">
-      <line x1="0" y1="0" x2="40" y2="0" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="12" x2="40" y2="12" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="12" x2="18" y2="12" stroke="#1a1530" stroke-width="3"/>
-      <line x1="0" y1="24" x2="40" y2="24" stroke="#c9a96e" stroke-width="3"/>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="12" x2="40" y2="12" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="12" x2="18" y2="12" stroke="#2a1a50" stroke-width="3"/>
+      <line x1="0" y1="24" x2="40" y2="24" stroke="#d4b87a" stroke-width="3"/>
     </g>
     <g id="bagua-kan">
-      <line x1="0" y1="0" x2="40" y2="0" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="0" x2="18" y2="0" stroke="#1a1530" stroke-width="3"/>
-      <line x1="0" y1="12" x2="40" y2="12" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="24" x2="40" y2="24" stroke="#c9a96e" stroke-width="3"/>
-      <line x1="0" y1="24" x2="18" y2="24" stroke="#1a1530" stroke-width="3"/>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="0" x2="18" y2="0" stroke="#2a1a50" stroke-width="3"/>
+      <line x1="0" y1="12" x2="40" y2="12" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="24" x2="40" y2="24" stroke="#d4b87a" stroke-width="3"/>
+      <line x1="0" y1="24" x2="18" y2="24" stroke="#2a1a50" stroke-width="3"/>
     </g>
   </defs>
-  <rect width="1792" height="1024" fill="#2a2050"/>
+  <rect width="1792" height="1024" fill="#2a1a50"/>
   <rect width="1792" height="1024" fill="url(#cosmicGlow)"/>
-  <g fill="#ffffff" opacity="0.8">
+  <g fill="#ffffff" opacity="0.75">
     <circle cx="120" cy="80" r="1.5"/><circle cx="340" cy="150" r="1"/>
     <circle cx="560" cy="60" r="1.2"/><circle cx="780" cy="120" r="1.5"/>
     <circle cx="1000" cy="90" r="1"/><circle cx="1250" cy="140" r="1.3"/>
@@ -68,125 +68,125 @@
     <circle cx="1500" cy="450" r="0.8"/><circle cx="1620" cy="500" r="0.6"/>
   </g>
   <g filter="url(#starGlow)">
-    <circle cx="250" cy="100" r="2" fill="#a0c8ff" opacity="0.9"/>
-    <circle cx="650" cy="80" r="2.5" fill="#fff0b0" opacity="0.85"/>
-    <circle cx="1100" cy="130" r="2" fill="#8ab4f8" opacity="0.5"/>
-    <circle cx="1520" cy="90" r="2" fill="#ffb8b8" opacity="0.85"/>
-    <circle cx="420" cy="250" r="1.8" fill="#f8e8a0" opacity="0.5"/>
-    <circle cx="1380" cy="280" r="2" fill="#8ab4f8" opacity="0.5"/>
+    <circle cx="250" cy="100" r="2.5" fill="#a8d0ff" opacity="0.9"/>
+    <circle cx="650" cy="80" r="3" fill="#fff5c0" opacity="0.85"/>
+    <circle cx="1100" cy="130" r="2.5" fill="#a8d0ff" opacity="0.8"/>
+    <circle cx="1520" cy="90" r="2.5" fill="#ffc0c0" opacity="0.85"/>
+    <circle cx="420" cy="250" r="2.2" fill="#fff5c0" opacity="0.8"/>
+    <circle cx="1380" cy="280" r="2.5" fill="#a8d0ff" opacity="0.8"/>
   </g>
-  <g opacity="0.4">
-    <ellipse cx="300" cy="350" rx="350" ry="60" fill="#8b5cf6"/>
-    <ellipse cx="900" cy="300" rx="400" ry="50" fill="#6d28d9"/>
-    <ellipse cx="1400" cy="370" rx="350" ry="70" fill="#8b5cf6"/>
+  <g opacity="0.12">
+    <ellipse cx="300" cy="350" rx="350" ry="60" fill="#9a7ac0"/>
+    <ellipse cx="900" cy="300" rx="400" ry="50" fill="#7a5aaa"/>
+    <ellipse cx="1400" cy="370" rx="350" ry="70" fill="#9a7ac0"/>
   </g>
-  <g transform="translate(896, 240)" opacity="1.0">
-    <circle cx="0" cy="0" r="100" fill="none" stroke="#c9a96e" stroke-width="2" opacity="0.45"/>
-    <circle cx="0" cy="0" r="80" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.5"/>
-    <circle cx="0" cy="0" r="20" fill="none" stroke="#c9a96e" stroke-width="0.8" opacity="0.4"/>
-    <circle cx="0" cy="-5" r="8" fill="#c9a96e" opacity="0.3"/>
-    <circle cx="0" cy="5" r="8" fill="none" stroke="#c9a96e" stroke-width="2" opacity="0.15"/>
-    <g transform="translate(-20, -118)"><use href="#bagua-qian" opacity="0.6"/></g>
+  <g transform="translate(896, 240)">
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.45"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.35"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.35"/>
+    <circle cx="0" cy="-5" r="8" fill="#d4b87a" opacity="0.3"/>
+    <circle cx="0" cy="5" r="8" fill="none" stroke="#d4b87a" stroke-width="2.5" opacity="0.3"/>
+    <g transform="translate(-20, -118)"><use href="#bagua-qian" opacity="0.55"/></g>
     <g transform="translate(62, -100) rotate(45)"><use href="#bagua-li" opacity="0.5"/></g>
     <g transform="translate(108, -12) rotate(90)"><use href="#bagua-kan" opacity="0.5"/></g>
     <g transform="translate(65, 78) rotate(135)"><use href="#bagua-kun" opacity="0.45"/></g>
-    <g transform="translate(-20, 90) rotate(180)"><use href="#bagua-qian" opacity="0.2"/></g>
-    <g transform="translate(-105, 75) rotate(225)"><use href="#bagua-li" opacity="0.2"/></g>
-    <g transform="translate(-130, -12) rotate(270)"><use href="#bagua-kan" opacity="0.2"/></g>
-    <g transform="translate(-100, -100) rotate(315)"><use href="#bagua-kun" opacity="0.2"/></g>
+    <g transform="translate(-20, 90) rotate(180)"><use href="#bagua-qian" opacity="0.45"/></g>
+    <g transform="translate(-105, 75) rotate(225)"><use href="#bagua-li" opacity="0.45"/></g>
+    <g transform="translate(-130, -12) rotate(270)"><use href="#bagua-kan" opacity="0.45"/></g>
+    <g transform="translate(-100, -100) rotate(315)"><use href="#bagua-kun" opacity="0.45"/></g>
   </g>
-  <g opacity="0.4">
+  <g opacity="0.35">
     <g transform="translate(250, 400)">
-      <line x1="0" y1="0" x2="60" y2="0" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="10" x2="60" y2="10" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="20" x2="60" y2="20" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="20" x2="28" y2="20" stroke="#3a3070" stroke-width="2"/>
-      <line x1="0" y1="30" x2="60" y2="30" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="30" x2="28" y2="30" stroke="#1a1530" stroke-width="2"/>
-      <line x1="0" y1="40" x2="60" y2="40" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="50" x2="60" y2="50" stroke="#c9a96e" stroke-width="2"/>
+      <line x1="0" y1="0" x2="60" y2="0" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="10" x2="60" y2="10" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="20" x2="60" y2="20" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="20" x2="28" y2="20" stroke="#2a1a50" stroke-width="2"/>
+      <line x1="0" y1="30" x2="60" y2="30" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="30" x2="28" y2="30" stroke="#2a1a50" stroke-width="2"/>
+      <line x1="0" y1="40" x2="60" y2="40" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="50" x2="60" y2="50" stroke="#d4b87a" stroke-width="2"/>
     </g>
     <g transform="translate(1480, 380)">
-      <line x1="0" y1="0" x2="60" y2="0" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="0" x2="28" y2="0" stroke="#1a1530" stroke-width="2"/>
-      <line x1="0" y1="10" x2="60" y2="10" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="20" x2="60" y2="20" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="20" x2="28" y2="20" stroke="#1a1530" stroke-width="2"/>
-      <line x1="0" y1="30" x2="60" y2="30" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="40" x2="60" y2="40" stroke="#c9a96e" stroke-width="2"/>
-      <line x1="0" y1="50" x2="60" y2="50" stroke="#c9a96e" stroke-width="2"/>
+      <line x1="0" y1="0" x2="60" y2="0" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="0" x2="28" y2="0" stroke="#2a1a50" stroke-width="2"/>
+      <line x1="0" y1="10" x2="60" y2="10" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="20" x2="60" y2="20" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="20" x2="28" y2="20" stroke="#2a1a50" stroke-width="2"/>
+      <line x1="0" y1="30" x2="60" y2="30" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="40" x2="60" y2="40" stroke="#d4b87a" stroke-width="2"/>
+      <line x1="0" y1="50" x2="60" y2="50" stroke="#d4b87a" stroke-width="2"/>
     </g>
   </g>
   <rect x="496" y="680" width="800" height="24" rx="3" fill="#4a3824"/>
-  <rect x="496" y="680" width="800" height="2" fill="#d4b87a" opacity="0.45"/>
+  <rect x="496" y="680" width="800" height="2" fill="#d4b87a" opacity="0.4"/>
   <rect x="520" y="704" width="752" height="160" rx="3" fill="#3a2a18"/>
-  <rect x="520" y="704" width="752" height="2" fill="#c9a96e" opacity="0.15"/>
-  <rect x="600" y="660" width="592" height="24" rx="2" fill="#d4b87a" opacity="0.7"/>
-  <line x1="600" y1="674" x2="1192" y2="674" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <rect x="520" y="704" width="752" height="2" fill="#d4b87a" opacity="0.25"/>
+  <rect x="600" y="660" width="592" height="24" rx="2" fill="#d4b87a" opacity="0.4"/>
+  <line x1="600" y1="674" x2="1192" y2="674" stroke="#d4b87a" stroke-width="0.8" opacity="0.45"/>
   <rect x="0" y="600" width="1792" height="424" fill="url(#altarGlow)"/>
   <rect x="560" y="430" width="16" height="240" rx="3" fill="#7a5e3e"/>
   <ellipse cx="568" cy="430" rx="10" ry="14" fill="#f0a050"/>
-  <ellipse cx="568" cy="418" rx="5" ry="10" fill="#f5d080" opacity="1.0"/>
-  <ellipse cx="568" cy="410" rx="3" ry="6" fill="#fff4c0" opacity="0.8"/>
-  <circle cx="568" cy="418" r="40" fill="#f0c060" opacity="0.04" filter="url(#softGlow)"/>
-  <rect x="1216" y="430" width="16" height="240" rx="3" fill="#5c4a2e"/>
-  <ellipse cx="1224" cy="430" rx="10" ry="14" fill="#e8943a"/>
-  <ellipse cx="1224" cy="418" rx="5" ry="10" fill="#f0c060" opacity="0.9"/>
-  <ellipse cx="1224" cy="410" rx="3" ry="6" fill="#fff4c0" opacity="0.8"/>
-  <circle cx="1224" cy="418" r="40" fill="#f0c060" opacity="0.04" filter="url(#softGlow)"/>
-  <ellipse cx="896" cy="520" rx="35" ry="12" fill="#c9a96e" opacity="0.5"/>
-  <ellipse cx="896" cy="515" rx="28" ry="6" fill="#4a3824"/>
-  <path d="M868 520 Q868 440 896 430 Q924 440 924 520" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.6"/>
-  <circle cx="896" cy="430" r="4" fill="#ff6b35" opacity="0.4"/>
-  <g opacity="0.5">
-    <path d="M890 420 Q870 380 880 340 Q890 300 875 260" fill="none" stroke="#c9a96e" stroke-width="1.5"/>
-    <path d="M902 420 Q920 370 910 320 Q900 270 920 220" fill="none" stroke="#c9a96e" stroke-width="1"/>
-    <path d="M896 420 Q896 360 896 300 Q896 240 896 180" fill="none" stroke="#c9a96e" stroke-width="0.8"/>
+  <ellipse cx="568" cy="418" rx="5" ry="10" fill="#f5d080" opacity="1"/>
+  <ellipse cx="568" cy="410" rx="3" ry="6" fill="#ffffff" opacity="0.9"/>
+  <circle cx="568" cy="418" r="40" fill="#f5d080" opacity="0.08" filter="url(#softGlow)"/>
+  <rect x="1216" y="430" width="16" height="240" rx="3" fill="#7a5e3e"/>
+  <ellipse cx="1224" cy="430" rx="10" ry="14" fill="#f0a050"/>
+  <ellipse cx="1224" cy="418" rx="5" ry="10" fill="#f5d080" opacity="1"/>
+  <ellipse cx="1224" cy="410" rx="3" ry="6" fill="#ffffff" opacity="0.9"/>
+  <circle cx="1224" cy="418" r="40" fill="#f5d080" opacity="0.08" filter="url(#softGlow)"/>
+  <ellipse cx="896" cy="520" rx="35" ry="12" fill="#d4b87a" opacity="0.65"/>
+  <ellipse cx="896" cy="515" rx="28" ry="6" fill="#3a2a18"/>
+  <path d="M868 520 Q868 440 896 430 Q924 440 924 520" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.55"/>
+  <circle cx="896" cy="430" r="4" fill="#ff9050" opacity="0.5"/>
+  <g opacity="0.35">
+    <path d="M890 420 Q870 380 880 340 Q890 300 875 260" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+    <path d="M902 420 Q920 370 910 320 Q900 270 920 220" fill="none" stroke="#d4b87a" stroke-width="1"/>
+    <path d="M896 420 Q896 360 896 300 Q896 240 896 180" fill="none" stroke="#d4b87a" stroke-width="0.8"/>
   </g>
   <rect x="856" y="530" width="80" height="150" rx="3" fill="#faf6ed" opacity="0.95"/>
-  <rect x="856" y="530" width="80" height="8" fill="#c43a31" opacity="0.9"/>
-  <rect x="856" y="538" width="80" height="2" fill="#c43a31" opacity="0.4"/>
-  <g opacity="0.95">
-    <circle cx="896" cy="555" r="8" fill="none" stroke="#1a1a1a" stroke-width="0.8"/>
-    <circle cx="896" cy="555" r="4" fill="#1a1a1a" opacity="0.3"/>
-    <path d="M870 575 Q896 568 922 578" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>
-    <path d="M865 590 Q896 582 927 592" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>
-    <path d="M868 605 Q896 598 924 607" fill="none" stroke="#1a1a1a" stroke-width="1"/>
-    <path d="M872 618 Q896 612 920 620" fill="none" stroke="#1a1a1a" stroke-width="1"/>
-    <rect x="878" y="645" width="36" height="36" fill="none" stroke="#c43a31" stroke-width="0.8" opacity="0.5"/>
-    <path d="M882 660 Q896 652 910 662" fill="none" stroke="#c43a31" stroke-width="0.8" opacity="0.4"/>
-    <path d="M885 668 Q896 662 907 670" fill="none" stroke="#c43a31" stroke-width="0.8" opacity="0.4"/>
+  <rect x="856" y="530" width="80" height="8" fill="#c43a31" opacity="0.95"/>
+  <rect x="856" y="538" width="80" height="2" fill="#c43a31" opacity="0.5"/>
+  <g opacity="0.85">
+    <circle cx="896" cy="555" r="8" fill="none" stroke="#2a1a1a" stroke-width="1"/>
+    <circle cx="896" cy="555" r="4" fill="#2a1a1a" opacity="0.4"/>
+    <path d="M870 575 Q896 568 922 578" fill="none" stroke="#2a1a1a" stroke-width="1.5"/>
+    <path d="M865 590 Q896 582 927 592" fill="none" stroke="#2a1a1a" stroke-width="1.5"/>
+    <path d="M868 605 Q896 598 924 607" fill="none" stroke="#2a1a1a" stroke-width="1.2"/>
+    <path d="M872 618 Q896 612 920 620" fill="none" stroke="#2a1a1a" stroke-width="1.2"/>
+    <rect x="878" y="645" width="36" height="36" fill="none" stroke="#c43a31" stroke-width="1" opacity="0.6"/>
+    <path d="M882 660 Q896 652 910 662" fill="none" stroke="#c43a31" stroke-width="1" opacity="0.5"/>
+    <path d="M885 668 Q896 662 907 670" fill="none" stroke="#c43a31" stroke-width="1" opacity="0.5"/>
   </g>
-  <g opacity="0.6">
-    <line x1="760" y1="540" x2="755" y2="640" stroke="#8b7355" stroke-width="2"/>
-    <line x1="768" y1="538" x2="763" y2="642" stroke="#8b7355" stroke-width="2"/>
-    <line x1="776" y1="536" x2="771" y2="644" stroke="#8b7355" stroke-width="2"/>
-    <line x1="784" y1="534" x2="779" y2="646" stroke="#8b7355" stroke-width="2"/>
-    <line x1="792" y1="532" x2="787" y2="648" stroke="#8b7355" stroke-width="2"/>
-    <line x1="800" y1="530" x2="795" y2="650" stroke="#8b7355" stroke-width="2"/>
+  <g opacity="0.55">
+    <line x1="760" y1="540" x2="755" y2="640" stroke="#a08060" stroke-width="2"/>
+    <line x1="768" y1="538" x2="763" y2="642" stroke="#a08060" stroke-width="2"/>
+    <line x1="776" y1="536" x2="771" y2="644" stroke="#a08060" stroke-width="2"/>
+    <line x1="784" y1="534" x2="779" y2="646" stroke="#a08060" stroke-width="2"/>
+    <line x1="792" y1="532" x2="787" y2="648" stroke="#a08060" stroke-width="2"/>
+    <line x1="800" y1="530" x2="795" y2="650" stroke="#a08060" stroke-width="2"/>
   </g>
-  <circle cx="1010" cy="540" r="10" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.6"/>
-  <circle cx="1010" cy="540" r="6" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
-  <rect x="1006" y="538" width="8" height="4" fill="#c9a96e" opacity="0.3" transform="rotate(45,1010,540)"/>
-  <circle cx="1030" cy="545" r="10" fill="none" stroke="#c9a96e" stroke-width="1.5" opacity="0.35"/>
-  <circle cx="1030" cy="545" r="6" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.45"/>
-  <rect x="1026" y="543" width="8" height="4" fill="#c9a96e" opacity="0.25" transform="rotate(45,1030,545)"/>
-  <circle cx="1020" cy="560" r="10" fill="none" stroke="#c9a96e" stroke-width="1.5" opacity="0.3"/>
-  <circle cx="1020" cy="560" r="6" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.2"/>
-  <g opacity="0.2">
-    <circle cx="400" cy="500" r="2" fill="#f0c060"/>
-    <circle cx="550" cy="360" r="1.5" fill="#f0c060"/>
-    <circle cx="700" cy="480" r="1.8" fill="#f0c060"/>
-    <circle cx="1100" cy="490" r="1.5" fill="#f0c060"/>
-    <circle cx="1250" cy="370" r="2" fill="#f0c060"/>
-    <circle cx="1400" cy="510" r="1.3" fill="#f0c060"/>
-    <circle cx="780" cy="620" r="1" fill="#f0c060"/>
-    <circle cx="1020" cy="630" r="1.2" fill="#f0c060"/>
+  <circle cx="1010" cy="540" r="10" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.55"/>
+  <circle cx="1010" cy="540" r="6" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+  <rect x="1006" y="538" width="8" height="4" fill="#d4b87a" opacity="0.45" transform="rotate(45,1010,540)"/>
+  <circle cx="1030" cy="545" r="10" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.5"/>
+  <circle cx="1030" cy="545" r="6" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.35"/>
+  <rect x="1026" y="543" width="8" height="4" fill="#d4b87a" opacity="0.4" transform="rotate(45,1030,545)"/>
+  <circle cx="1020" cy="560" r="10" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.45"/>
+  <circle cx="1020" cy="560" r="6" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.3"/>
+  <g opacity="0.35">
+    <circle cx="400" cy="500" r="2.5" fill="#f5d080"/>
+    <circle cx="550" cy="360" r="2" fill="#f5d080"/>
+    <circle cx="700" cy="480" r="2.2" fill="#f5d080"/>
+    <circle cx="1100" cy="490" r="2" fill="#f5d080"/>
+    <circle cx="1250" cy="370" r="2.5" fill="#f5d080"/>
+    <circle cx="1400" cy="510" r="1.8" fill="#f5d080"/>
+    <circle cx="780" cy="620" r="1.5" fill="#f5d080"/>
+    <circle cx="1020" cy="630" r="1.8" fill="#f5d080"/>
   </g>
-  <rect x="0" y="800" width="1792" height="224" fill="#3a3070" opacity="0.6"/>
-  <g opacity="0.08">
-    <ellipse cx="300" cy="840" rx="400" ry="80" fill="#4a3070"/>
-    <ellipse cx="896" cy="860" rx="500" ry="100" fill="#3a3070"/>
-    <ellipse cx="1500" cy="830" rx="400" ry="80" fill="#1a0a3a"/>
+  <rect x="0" y="800" width="1792" height="224" fill="#2a1a50" opacity="0.5"/>
+  <g opacity="0.1">
+    <ellipse cx="300" cy="840" rx="400" ry="80" fill="#5a4080"/>
+    <ellipse cx="896" cy="860" rx="500" ry="100" fill="#3a2a60"/>
+    <ellipse cx="1500" cy="830" rx="400" ry="80" fill="#5a4080"/>
   </g>
 </svg>
