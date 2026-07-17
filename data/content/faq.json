@@ -1,0 +1,46 @@
+{
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subheading": "Answers to the most common questions about our services, rituals, and products",
+    "faqs": [
+      {
+        "q": "How do I book a service?",
+        "a": "Simply tap 'Book on WhatsApp' on any service page. Our customer service will confirm your booking and guide you through the process."
+      },
+      {
+        "q": "Are the rituals real?",
+        "a": "Yes — all rituals are performed at the Longhu Mountain Tianshi Mansion altar. You receive a full video of your ceremony before shipping."
+      },
+      {
+        "q": "How do I know the ritual was performed?",
+        "a": "You will receive a custom video showing your name being written and the full consecration sequence — no exceptions."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Rituals are performed within 3-5 business days after booking. Shipping to US and Europe takes 7-14 days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "We accept payments via bank transfer, Wise, or PayPal — all handled through WhatsApp after booking."
+      },
+      {
+        "q": "Can I get a refund?",
+        "a": "Each ritual is personalized and performed for you. Once the ceremony is filmed with your name, returns are not accepted."
+      },
+      {
+        "q": "What is Qi Men Dun Jia?",
+        "a": "Qi Men Dun Jia (奇门遁甲) is an ancient Chinese strategic divination system used for decision-making and timing."
+      },
+      {
+        "q": "Do I need to know Chinese or Taoism?",
+        "a": "Not at all. All services are offered in English and designed for Western seekers."
+      },
+      {
+        "q": "Can I buy products as gifts?",
+        "a": "Absolutely. Just let us know the recipient's name and intention during booking."
+      }
+    ],
+    "stillQuestions": "Still have questions?",
+    "cta": "Chat on WhatsApp"
+  }
+}

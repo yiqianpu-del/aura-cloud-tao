@@ -1,0 +1,21 @@
+{
+  "services": {
+    "page": {
+      "heading": "Sacred Ritual Services",
+      "subheading": "Custom Taoist rituals performed at Longhu Mountain Tianshi Mansion",
+      "cta": "Discuss Your Ritual Need → WhatsApp"
+    },
+    "divinationPage": {
+      "heading": "Qi Men Dun Jia Divination",
+      "subheading": "Ancient Chinese strategic oracle for modern life decisions",
+      "chineseSub": "奇门遁甲 — 古代东方战略占卜",
+      "cta": "Book a Reading → WhatsApp"
+    },
+    "fengshuiPage": {
+      "heading": "Taoist Feng Shui",
+      "subheading": "Harmonize your space with remote Feng Shui consultation and energy tools",
+      "chineseSub": "Combining classical Feng Shui with Qi Men Dun Jia strategic positioning",
+      "cta": "Book a Consultation → WhatsApp"
+    }
+  }
+}

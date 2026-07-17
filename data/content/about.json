@@ -1,0 +1,41 @@
+{
+  "about": {
+    "heading": "About Us",
+    "subheading": "Bridging ancient wisdom with modern understanding",
+    "mission": {
+      "heading": "Our Mission",
+      "paragraphs": [
+        "Our mission is to bridge the profound wisdom of Taoist traditions with contemporary life, making ancient knowledge accessible and practical for modern seekers.",
+        "We are committed to preserving and sharing authentic Taoist teachings while helping individuals navigate their personal and spiritual growth through traditional Chinese metaphysical arts.",
+        "Through education, consultation, and community building, we aim to create a space where Eastern wisdom can flourish and transform lives in the Western world."
+      ],
+      "image": "/images/altar-scene.svg",
+      "imageAlt": "Longhu Mountain Tianshi Mansion"
+    },
+    "values": {
+      "heading": "Our Values",
+      "items": [
+        {
+          "title": "Authenticity",
+          "icon": "✨",
+          "desc": "We maintain the integrity of traditional Taoist teachings while making them accessible to modern practitioners."
+        },
+        {
+          "title": "Compassion",
+          "icon": "🪷",
+          "desc": "We approach every consultation with empathy and understanding, recognizing each person's unique journey."
+        },
+        {
+          "title": "Community",
+          "icon": "🤝",
+          "desc": "We foster a supportive community where seekers can learn, grow, and share their experiences."
+        }
+      ]
+    },
+    "practitioner": {
+      "heading": "Our Taoist Practitioner",
+      "subheading": "Meet our dedicated practitioner who brings decades of experience and deep understanding of Taoist arts.",
+      "image": "/images/master-silhouette.svg"
+    }
+  }
+}

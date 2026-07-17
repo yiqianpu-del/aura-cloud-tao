@@ -1,0 +1,138 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "Ancient Taoist Wisdom for Modern Life",
+      "subtitle": "Authentic ritual services · Qi Men divination · Feng Shui consultation",
+      "description": "Discover hand-written Taoist talismans, Qi Men Dun Jia card readings, space energy harmonization, and sacred ceremonies — all performed by a gaogong priest of Longhu Mountain Tianshi Mansion, with filmed ritual proof.",
+      "ctaText": "Begin Your Journey",
+      "backgroundImage": "/images/hero-altar.jpg"
+    },
+    "features": {
+      "heading": "Explore Our Offerings",
+      "subheading": "Authentic Taoist practices for the modern seeker — from sacred rituals to spiritual products",
+      "chineseSub": "古老道家智慧，照进现代生活",
+      "sections": [
+        {
+          "title": "Ritual Services",
+          "titleCn": "法事服务",
+          "desc": "Karmic release, pet memorial, and space energy alignment ceremonies performed at Longhu Mountain",
+          "href": "/services"
+        },
+        {
+          "title": "Qi Men Divination",
+          "titleCn": "奇门问卦",
+          "desc": "Ancient Chinese strategic oracle — card readings, energy audits, and classical physiognomy",
+          "href": "/divination"
+        },
+        {
+          "title": "Feng Shui",
+          "titleCn": "风水堪舆",
+          "desc": "Remote space energy consultation combining traditional Feng Shui with Qi Men positioning",
+          "href": "/feng-shui"
+        },
+        {
+          "title": "Spiritual Shop",
+          "titleCn": "文创商城",
+          "desc": "Qi Men card deck, talisman art, physiognomy mirror — each item consecrated with intention",
+          "href": "/shop"
+        }
+      ]
+    },
+    "howItWorks": {
+      "heading": "How Your Ritual Is Performed",
+      "subheading": "Four altar steps for your order — the full ceremony is also filmed and sent before shipping.",
+      "chineseSub": "科仪四步实景；寄符前另发您订单全程录像。",
+      "steps": [
+        {
+          "num": 1,
+          "title": "Preparation of the altar",
+          "zh": "布置道坛"
+        },
+        {
+          "num": 2,
+          "title": "Lighting incense and prayer",
+          "zh": "点香祈愿"
+        },
+        {
+          "num": 3,
+          "title": "Hand-writing your talisman",
+          "zh": "书写符箓"
+        },
+        {
+          "num": 4,
+          "title": "Consecration ceremony",
+          "zh": "开光仪式"
+        }
+      ],
+      "ctaText": "Reserve Your Ritual"
+    },
+    "packages": {
+      "heading": "Choose Your Blessing Package",
+      "subheading": "Each package includes a hand-written talisman, filmed consecration with your name, care instructions, and worldwide shipping.",
+      "packages": [
+        {
+          "name": "Protection Package",
+          "price": 249,
+          "description": "Personal Protection talisman with full consecration ceremony.",
+          "category": "protection"
+        },
+        {
+          "name": "Health Package",
+          "price": 279,
+          "description": "Health or Longevity talisman with filmed blessing ritual.",
+          "category": "health"
+        },
+        {
+          "name": "Love Package",
+          "price": 329,
+          "description": "Love Harmony talisman with personalized consecration.",
+          "category": "health"
+        },
+        {
+          "name": "Wealth Package",
+          "price": 399,
+          "description": "Your choice of Wealth talisman with premium ceremony.",
+          "category": "wealth"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Everything you need to know about ordering an authentic Taoist talisman",
+      "faqs": [
+        {
+          "q": "How do I know the talisman is really hand-written?",
+          "a": "Check your order video: you should see brush and ink on ritual paper, your inscribed name, and the full consecration sequence. Printed talismans lack live stroke work."
+        },
+        {
+          "q": "How do I reserve a ritual slot?",
+          "a": "Tap Book on WhatsApp on any package page. Customer service confirms your slot, talisman choice, and shipping details in chat."
+        },
+        {
+          "q": "How long does delivery take?",
+          "a": "Your ritual is performed within 3–5 business days after WhatsApp confirmation. Shipping to the US and Europe typically takes 7–14 days. You receive a video of your ceremony before dispatch."
+        },
+        {
+          "q": "What do I receive?",
+          "a": "A personalized blessed talisman, ritual ceremony video, care instructions, and premium protective packaging."
+        },
+        {
+          "q": "Can I choose my intention?",
+          "a": "Absolutely. Select Love, Wealth, Protection, or Health & Balance. We inscribe your intention during the handwriting step."
+        },
+        {
+          "q": "How much does a Taoist talisman cost?",
+          "a": "Packages start at $249 (Protection), $279 (Health), $329 (Love), and $399 (Wealth). Each includes a hand-written talisman, filmed consecration, care instructions, and worldwide shipping."
+        },
+        {
+          "q": "Can I return or refund my order?",
+          "a": "Each talisman is personalized and consecrated for you. Once the ritual is filmed with your name, returns are not accepted. Contact us on WhatsApp before your ritual begins if your plans change."
+        },
+        {
+          "q": "What is Taoism in simple terms?",
+          "a": "Taoism (道教) is an ancient Chinese spiritual path focused on harmony with nature, inner peace, and balanced energy (Qi). Our service offers authentic Taoist ritual — hand-written talismans blessed by trained priests — not generic self-help."
+        }
+      ]
+    }
+  }
+}
