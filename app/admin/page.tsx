@@ -1,7 +1,6 @@
 'use client';
 import { useEffect } from 'react';
 
-// Inline CMS config — avoids 404 issues with Next.js static file serving
 const CMS_CONFIG = {
   backend: {
     name: "github",
@@ -77,10 +76,7 @@ const CMS_CONFIG = {
             { label: "大标题", name: "sectionTitle", widget: "string", default: "Frequently Asked Questions" },
             { label: "副标题", name: "sectionSubtitle", widget: "string" },
             {
-              label: "FAQ 列表",
-              name: "faqs",
-              widget: "list",
-              summary: "{{fields.q}}",
+              label: "FAQ 列表", name: "faqs", widget: "list", summary: "{{fields.q}}",
               fields: [
                 { label: "问题", name: "q", widget: "string" },
                 { label: "答案", name: "a", widget: "text" },
@@ -116,168 +112,86 @@ const CMS_CONFIG = {
       name: "services",
       label: "🪔 法事服务",
       editor: { preview: false },
-      files: [
-        {
-          name: "all",
-          label: "服务列表",
-          file: "content/services/services.yaml",
-          format: "yaml",
+      files: [{
+        name: "all", label: "服务列表", file: "content/services/services.yaml", format: "yaml",
+        fields: [{
+          label: "服务列表", name: "services", widget: "list", summary: "{{fields.slug}} — {{fields.title}}",
           fields: [
-            {
-              label: "服务列表",
-              name: "services",
-              widget: "list",
-              summary: "{{fields.slug}} — {{fields.title}}",
-              fields: [
-                { label: "Slug (URL)", name: "slug", widget: "string" },
-                { label: "标题 (英文)", name: "title", widget: "string" },
-                { label: "标题 (中文)", name: "titleCn", widget: "string" },
-                { label: "分类", name: "category", widget: "select", options: ["ritual", "divination", "fengshui"] },
-                { label: "标语", name: "tagline", widget: "string" },
-                { label: "详细描述", name: "description", widget: "text" },
-                { label: "适合人群", name: "whoNeedsIt", widget: "list", field: { label: "人群", name: "item", widget: "string" } },
-                {
-                  label: "流程",
-                  name: "process",
-                  widget: "list",
-                  summary: "{{fields.step}}. {{fields.title}}",
-                  fields: [
-                    { label: "步骤", name: "step", widget: "number" },
-                    { label: "标题", name: "title", widget: "string" },
-                    { label: "描述", name: "description", widget: "text" },
-                  ],
-                },
-                {
-                  label: "价格",
-                  name: "pricing",
-                  widget: "object",
-                  fields: [
-                    { label: "起价 (USD)", name: "startingFrom", widget: "number" },
-                    {
-                      label: "套餐选项",
-                      name: "options",
-                      widget: "list",
-                      required: false,
-                      fields: [
-                        { label: "套餐名", name: "name", widget: "string" },
-                        { label: "价格", name: "price", widget: "number" },
-                      ],
-                    },
-                  ],
-                },
-                { label: "交付方式", name: "delivery", widget: "string" },
-                { label: "包含内容", name: "includes", widget: "list", field: { label: "项目", name: "item", widget: "string" } },
-                { label: "图片", name: "image", widget: "image" },
-                {
-                  label: "FAQ",
-                  name: "faq",
-                  widget: "list",
-                  required: false,
-                  fields: [
-                    { label: "问题", name: "q", widget: "string" },
-                    { label: "答案", name: "a", widget: "text" },
-                  ],
-                },
-                {
-                  label: "关联产品",
-                  name: "relatedProducts",
-                  widget: "list",
-                  required: false,
-                  field: { label: "产品 Slug", name: "slug", widget: "string" },
-                },
-              ],
-            },
+            { label: "Slug (URL)", name: "slug", widget: "string" },
+            { label: "标题 (英文)", name: "title", widget: "string" },
+            { label: "标题 (中文)", name: "titleCn", widget: "string" },
+            { label: "分类", name: "category", widget: "select", options: ["ritual", "divination", "fengshui"] },
+            { label: "标语", name: "tagline", widget: "string" },
+            { label: "详细描述", name: "description", widget: "text" },
+            { label: "适合人群", name: "whoNeedsIt", widget: "list", field: { label: "人群", name: "item", widget: "string" } },
+            { label: "流程", name: "process", widget: "list", summary: "{{fields.step}}. {{fields.title}}", fields: [{ label: "步骤", name: "step", widget: "number" }, { label: "标题", name: "title", widget: "string" }, { label: "描述", name: "description", widget: "text" }] },
+            { label: "价格", name: "pricing", widget: "object", fields: [
+              { label: "起价 (USD)", name: "startingFrom", widget: "number" },
+              { label: "套餐选项", name: "options", widget: "list", required: false, fields: [{ label: "套餐名", name: "name", widget: "string" }, { label: "价格", name: "price", widget: "number" }] },
+            ] },
+            { label: "交付方式", name: "delivery", widget: "string" },
+            { label: "包含内容", name: "includes", widget: "list", field: { label: "项目", name: "item", widget: "string" } },
+            { label: "图片", name: "image", widget: "image" },
+            { label: "FAQ", name: "faq", widget: "list", required: false, fields: [{ label: "问题", name: "q", widget: "string" }, { label: "答案", name: "a", widget: "text" }] },
+            { label: "关联产品", name: "relatedProducts", widget: "list", required: false, field: { label: "产品 Slug", name: "slug", widget: "string" } },
           ],
-        },
-      ],
+        }],
+      }],
     },
     {
       name: "products",
       label: "🎴 商城产品",
       editor: { preview: false },
-      files: [
-        {
-          name: "all",
-          label: "产品列表",
-          file: "content/products/products.yaml",
-          format: "yaml",
+      files: [{
+        name: "all", label: "产品列表", file: "content/products/products.yaml", format: "yaml",
+        fields: [{
+          label: "产品列表", name: "products", widget: "list", summary: "{{fields.slug}} — {{fields.name}}",
           fields: [
-            {
-              label: "产品列表",
-              name: "products",
-              widget: "list",
-              summary: "{{fields.slug}} — {{fields.name}}",
-              fields: [
-                { label: "Slug (URL)", name: "slug", widget: "string" },
-                { label: "产品名 (英文)", name: "name", widget: "string" },
-                { label: "产品名 (中文)", name: "nameCn", widget: "string" },
-                { label: "分类", name: "categories", widget: "list", field: { label: "分类", name: "cat", widget: "string" } },
-                { label: "价格 (USD)", name: "price", widget: "number" },
-                { label: "标语", name: "tagline", widget: "string" },
-                { label: "描述", name: "description", widget: "text" },
-                { label: "特色", name: "features", widget: "list", field: { label: "特色", name: "item", widget: "string" } },
-                { label: "包含配件", name: "includes", widget: "list", field: { label: "项目", name: "item", widget: "string" } },
-                { label: "图片", name: "image", widget: "image" },
-                { label: "限量化", name: "isLimitedEdition", widget: "boolean", required: false },
-              ],
-            },
+            { label: "Slug (URL)", name: "slug", widget: "string" },
+            { label: "产品名 (英文)", name: "name", widget: "string" },
+            { label: "产品名 (中文)", name: "nameCn", widget: "string" },
+            { label: "分类", name: "categories", widget: "list", field: { label: "分类", name: "cat", widget: "string" } },
+            { label: "价格 (USD)", name: "price", widget: "number" },
+            { label: "标语", name: "tagline", widget: "string" },
+            { label: "描述", name: "description", widget: "text" },
+            { label: "特色", name: "features", widget: "list", field: { label: "特色", name: "item", widget: "string" } },
+            { label: "包含配件", name: "includes", widget: "list", field: { label: "项目", name: "item", widget: "string" } },
+            { label: "图片", name: "image", widget: "image" },
+            { label: "限量化", name: "isLimitedEdition", widget: "boolean", required: false },
           ],
-        },
-      ],
+        }],
+      }],
     },
     {
       name: "talismans",
       label: "📿 符箓列表",
       editor: { preview: false },
-      files: [
-        {
-          name: "all",
-          label: "符箓列表",
-          file: "content/talismans/talismans.yaml",
-          format: "yaml",
-          fields: [
-            {
-              label: "符箓列表",
-              name: "talismans",
-              widget: "list",
-              summary: "{{fields.slug}} — {{fields.name}}",
-              fields: [
-                { label: "Slug (URL)", name: "slug", widget: "string" },
-                { label: "名称 (英文)", name: "name", widget: "string" },
-                { label: "名称 (中文)", name: "chineseName", widget: "string" },
-                { label: "分类", name: "category", widget: "select", options: ["wealth", "protection", "health", "luck"] },
-                { label: "价格 (USD)", name: "price", widget: "number" },
-                { label: "描述", name: "description", widget: "text" },
-                { label: "功能特点", name: "features", widget: "list", field: { label: "特点", name: "item", widget: "string" } },
-              ],
-            },
-            {
-              label: "祈福套餐",
-              name: "talismanPackages",
-              widget: "list",
-              summary: "{{fields.name}} — \${{fields.price}}",
-              fields: [
-                { label: "套餐名", name: "name", widget: "string" },
-                { label: "价格 (USD)", name: "price", widget: "number" },
-                { label: "描述", name: "description", widget: "text" },
-                { label: "分类", name: "category", widget: "string" },
-              ],
-            },
-            {
-              label: "符箓分类",
-              name: "talismanCategories",
-              widget: "list",
-              summary: "{{fields.name}}",
-              fields: [
-                { label: "ID", name: "id", widget: "string" },
-                { label: "名称", name: "name", widget: "string" },
-                { label: "图标", name: "icon", widget: "string" },
-                { label: "描述", name: "description", widget: "string" },
-              ],
-            },
-          ],
-        },
-      ],
+      files: [{
+        name: "all", label: "符箓列表 + 套餐 + 分类", file: "content/talismans/talismans.yaml", format: "yaml",
+        fields: [
+          { label: "符箓列表", name: "talismans", widget: "list", summary: "{{fields.slug}} — {{fields.name}}", fields: [
+            { label: "Slug (URL)", name: "slug", widget: "string" },
+            { label: "名称 (英文)", name: "name", widget: "string" },
+            { label: "名称 (中文)", name: "chineseName", widget: "string" },
+            { label: "分类", name: "category", widget: "select", options: ["wealth", "protection", "health", "luck"] },
+            { label: "价格 (USD)", name: "price", widget: "number" },
+            { label: "描述", name: "description", widget: "text" },
+            { label: "功能特点", name: "features", widget: "list", field: { label: "特点", name: "item", widget: "string" } },
+          ]},
+          { label: "祈福套餐", name: "talismanPackages", widget: "list", summary: "{{fields.name}}", fields: [
+            { label: "套餐名", name: "name", widget: "string" },
+            { label: "价格 (USD)", name: "price", widget: "number" },
+            { label: "描述", name: "description", widget: "text" },
+            { label: "分类", name: "category", widget: "string" },
+          ]},
+          { label: "符箓分类", name: "talismanCategories", widget: "list", summary: "{{fields.name}}", fields: [
+            { label: "ID", name: "id", widget: "string" },
+            { label: "名称", name: "name", widget: "string" },
+            { label: "图标", name: "icon", widget: "string" },
+            { label: "描述", name: "description", widget: "string" },
+          ]},
+        ],
+      }],
     },
     {
       name: "blog",
@@ -299,39 +213,38 @@ const CMS_CONFIG = {
 
 export default function AdminPage() {
   useEffect(() => {
-    // Load Decap CMS script
     const script = document.createElement('script');
     script.src = 'https://unpkg.com/decap-cms@^3/dist/decap-cms.js';
     script.async = true;
 
     script.onload = () => {
-      const win = window as any;
-      // Wait for CMS to be available
-      const check = setInterval(() => {
+      const tryInit = () => {
+        const win = window as any;
         if (win.CMS) {
-          clearInterval(check);
+          // Remove the loading indicator
+          const root = document.getElementById('cms-root');
+          if (root) root.style.display = 'none';
           win.CMS.init({ config: CMS_CONFIG });
+        } else {
+          setTimeout(tryInit, 200);
         }
-      }, 100);
+      };
+      tryInit();
     };
 
     document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
+    // DO NOT clean up — CMS takes control of the DOM
   }, []);
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '100vh',
-        color: '#666',
-        fontFamily: 'system-ui, sans-serif',
-      }}
-    >
+    <div id="cms-root" style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      minHeight: '100vh',
+      color: '#666',
+      fontFamily: 'system-ui, sans-serif',
+    }}>
       Loading admin panel...
     </div>
   );
