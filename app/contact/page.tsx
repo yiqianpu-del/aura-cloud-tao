@@ -1,29 +1,25 @@
+import siteContent from '@/data/siteContent.json';
 import { siteConfig } from '@/data/site-config';
 
-export const metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with Aura Cloud Tao. The fastest way to reach us is through WhatsApp.',
-};
+const c = siteContent.contact;
+
+export const metadata = { title: 'Contact Us', description: 'Get in touch with Aura Cloud Tao. The fastest way to reach us is through WhatsApp.' };
 
 export default function ContactPage() {
   return (
     <div className="section">
       <div className="container max-w-2xl text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-        <p className="text-gray-600 mb-12">The fastest way to reach us is through WhatsApp. We typically respond within a few hours.</p>
-
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">{c.heading}</h1>
+        <p className="text-gray-600 mb-12">{c.subheading}</p>
         <div className="card p-8 mb-8">
-          <h2 className="text-xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-gray-600 mb-6">Click the button below to start a conversation on WhatsApp. Let us know which talisman you&apos;re interested in, and we&apos;ll guide you through the process.</p>
-          <a href={siteConfig.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg mb-4">
-            WhatsApp Us
-          </a>
-          <p className="text-sm text-gray-500">We reply within a few hours and on weekends too · Mon-Fri 9:00-17:00 EST</p>
+          <h2 className="text-xl font-bold mb-4">{c.cardHeading}</h2>
+          <p className="text-gray-600 mb-6">{c.cardText}</p>
+          <a href={siteConfig.whatsappLink} target="_blank" className="btn btn-gold btn-lg mb-4">{c.ctaText}</a>
+          <p className="text-sm text-gray-500">{c.responseTime}</p>
         </div>
-
         <div className="text-sm text-gray-500">
-          <p>Email: {siteConfig.email}</p>
-          <p className="mt-1">Hours: Monday – Friday, 9:00 – 17:00 EST</p>
+          <p>{c.emailLabel}: {siteConfig.email}</p>
+          <p className="mt-1">{c.hoursLabel}: {c.hours}</p>
         </div>
       </div>
     </div>

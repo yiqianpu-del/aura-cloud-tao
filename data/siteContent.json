@@ -1,0 +1,580 @@
+{
+  "site": {
+    "name": "Sacred Tao Wisdom",
+    "tagline": "Ancient Taoist wisdom for modern life",
+    "description": "Authentic Taoist ritual services, Qi Men divination, Feng Shui consultation, and hand-crafted spiritual products.",
+    "url": "https://sacred-tao-wisdom.com",
+    "whatsapp": "+85256151619",
+    "email": "hello@sacred-tao-wisdom.com",
+    "social": {
+      "instagram": "https://instagram.com/sacredtaowisdom",
+      "facebook": "https://facebook.com/sacredtaowisdom"
+    },
+    "masterName": "Master Chen Wei",
+    "masterTitle": "Gaogong Taoist Priest — Longhu Mountain Tianshi Mansion",
+    "masterBio": "For over 20 years, I have dedicated my life to the practice of classical Taoist rituals at Longhu Mountain Tianshi Mansion (龙虎山天师府). Each talisman I write is a living tradition passed down through generations — hand-brushed on ritual paper, consecrated at the altar with your name and intention, and filmed as a testament to its authenticity.",
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Rituals",
+        "href": "/services"
+      },
+      {
+        "label": "Divination",
+        "href": "/divination"
+      },
+      {
+        "label": "Feng Shui",
+        "href": "/feng-shui"
+      },
+      {
+        "label": "Shop",
+        "href": "/shop"
+      },
+      {
+        "label": "Learn",
+        "href": "/learn"
+      },
+      {
+        "label": "Community",
+        "href": "/community"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      }
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "title": "Ancient Taoist Wisdom for Modern Life",
+      "subtitle": "Authentic ritual services · Qi Men divination · Feng Shui consultation",
+      "description": "Discover hand-written Taoist talismans, Qi Men Dun Jia card readings, space energy harmonization, and sacred ceremonies — all performed by a gaogong priest of Longhu Mountain Tianshi Mansion, with filmed ritual proof.",
+      "ctaText": "Begin Your Journey",
+      "backgroundImage": "/images/hero-altar.jpg"
+    },
+    "features": {
+      "heading": "Explore Our Offerings",
+      "subheading": "Authentic Taoist practices for the modern seeker — from sacred rituals to spiritual products",
+      "chineseSub": "古老道家智慧，照进现代生活",
+      "sections": [
+        {
+          "title": "Ritual Services",
+          "titleCn": "法事服务",
+          "desc": "Karmic release, pet memorial, and space energy alignment ceremonies performed at Longhu Mountain",
+          "href": "/services"
+        },
+        {
+          "title": "Qi Men Divination",
+          "titleCn": "奇门问卦",
+          "desc": "Ancient Chinese strategic oracle — card readings, energy audits, and classical physiognomy",
+          "href": "/divination"
+        },
+        {
+          "title": "Feng Shui",
+          "titleCn": "风水堪舆",
+          "desc": "Remote space energy consultation combining traditional Feng Shui with Qi Men positioning",
+          "href": "/feng-shui"
+        },
+        {
+          "title": "Spiritual Shop",
+          "titleCn": "文创商城",
+          "desc": "Qi Men card deck, talisman art, physiognomy mirror — each item consecrated with intention",
+          "href": "/shop"
+        }
+      ]
+    },
+    "howItWorks": {
+      "heading": "How Your Ritual Is Performed",
+      "subheading": "Four altar steps for your order — the full ceremony is also filmed and sent before shipping.",
+      "chineseSub": "科仪四步实景；寄符前另发您订单全程录像。",
+      "steps": [
+        {
+          "num": 1,
+          "title": "Preparation of the altar",
+          "zh": "布置道坛"
+        },
+        {
+          "num": 2,
+          "title": "Lighting incense and prayer",
+          "zh": "点香祈愿"
+        },
+        {
+          "num": 3,
+          "title": "Hand-writing your talisman",
+          "zh": "书写符箓"
+        },
+        {
+          "num": 4,
+          "title": "Consecration ceremony",
+          "zh": "开光仪式"
+        }
+      ],
+      "ctaText": "Reserve Your Ritual"
+    },
+    "packages": {
+      "heading": "Choose Your Blessing Package",
+      "subheading": "Each package includes a hand-written talisman, filmed consecration with your name, care instructions, and worldwide shipping.",
+      "packages": [
+        {
+          "name": "Protection Package",
+          "price": 249,
+          "description": "Personal Protection talisman with full consecration ceremony.",
+          "category": "protection"
+        },
+        {
+          "name": "Health Package",
+          "price": 279,
+          "description": "Health or Longevity talisman with filmed blessing ritual.",
+          "category": "health"
+        },
+        {
+          "name": "Love Package",
+          "price": 329,
+          "description": "Love Harmony talisman with personalized consecration.",
+          "category": "health"
+        },
+        {
+          "name": "Wealth Package",
+          "price": 399,
+          "description": "Your choice of Wealth talisman with premium ceremony.",
+          "category": "wealth"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Everything you need to know about ordering an authentic Taoist talisman",
+      "faqs": [
+        {
+          "q": "How do I know the talisman is really hand-written?",
+          "a": "Check your order video: you should see brush and ink on ritual paper, your inscribed name, and the full consecration sequence. Printed talismans lack live stroke work."
+        },
+        {
+          "q": "How do I reserve a ritual slot?",
+          "a": "Tap Book on WhatsApp on any package page. Customer service confirms your slot, talisman choice, and shipping details in chat."
+        },
+        {
+          "q": "How long does delivery take?",
+          "a": "Your ritual is performed within 3–5 business days after WhatsApp confirmation. Shipping to the US and Europe typically takes 7–14 days. You receive a video of your ceremony before dispatch."
+        },
+        {
+          "q": "What do I receive?",
+          "a": "A personalized blessed talisman, ritual ceremony video, care instructions, and premium protective packaging."
+        },
+        {
+          "q": "Can I choose my intention?",
+          "a": "Absolutely. Select Love, Wealth, Protection, or Health & Balance. We inscribe your intention during the handwriting step."
+        },
+        {
+          "q": "How much does a Taoist talisman cost?",
+          "a": "Packages start at $249 (Protection), $279 (Health), $329 (Love), and $399 (Wealth). Each includes a hand-written talisman, filmed consecration, care instructions, and worldwide shipping."
+        },
+        {
+          "q": "Can I return or refund my order?",
+          "a": "Each talisman is personalized and consecrated for you. Once the ritual is filmed with your name, returns are not accepted. Contact us on WhatsApp before your ritual begins if your plans change."
+        },
+        {
+          "q": "What is Taoism in simple terms?",
+          "a": "Taoism (道教) is an ancient Chinese spiritual path focused on harmony with nature, inner peace, and balanced energy (Qi). Our service offers authentic Taoist ritual — hand-written talismans blessed by trained priests — not generic self-help."
+        }
+      ]
+    }
+  },
+  "services": {
+    "page": {
+      "heading": "Sacred Ritual Services",
+      "subheading": "Custom Taoist rituals performed at Longhu Mountain Tianshi Mansion",
+      "cta": "Discuss Your Ritual Need → WhatsApp"
+    },
+    "divinationPage": {
+      "heading": "Qi Men Dun Jia Divination",
+      "subheading": "Ancient Chinese strategic oracle for modern life decisions",
+      "chineseSub": "奇门遁甲 — 古代东方战略占卜",
+      "cta": "Book a Reading → WhatsApp"
+    },
+    "fengshuiPage": {
+      "heading": "Taoist Feng Shui",
+      "subheading": "Harmonize your space with remote Feng Shui consultation and energy tools",
+      "chineseSub": "Combining classical Feng Shui with Qi Men Dun Jia strategic positioning",
+      "cta": "Book a Consultation → WhatsApp"
+    }
+  },
+  "shop": {
+    "heading": "Spiritual Shop",
+    "subheading": "Hand-crafted Taoist spiritual products for your practice and daily life",
+    "chineseSub": "Each item consecrated with intention — shop via WhatsApp",
+    "cta": "Inquire on WhatsApp"
+  },
+  "talismans": {
+    "heading": "Shop 22 Hand-Written Taoist Talismans",
+    "description": "Buy authentic Fulu hand-written on ritual paper by a gaogong priest of Longhu Mountain Tianshi Mansion — personalized with your name, ritual-blessed with filmed consecration proof, ships to US & Europe.",
+    "chineseSub": "二十二符，均由龙虎山天师府高功道士亲书；坛前开光，仪式摄录为证。",
+    "categoryImages": {
+      "wealth": "/images/talisman-wealth.svg",
+      "protection": "/images/talisman-protection.svg",
+      "health": "/images/talisman-health.svg",
+      "luck": "/images/talisman-luck.svg"
+    }
+  },
+  "about": {
+    "heading": "About Us",
+    "subheading": "Bridging ancient wisdom with modern understanding",
+    "mission": {
+      "heading": "Our Mission",
+      "paragraphs": [
+        "Our mission is to bridge the profound wisdom of Taoist traditions with contemporary life, making ancient knowledge accessible and practical for modern seekers.",
+        "We are committed to preserving and sharing authentic Taoist teachings while helping individuals navigate their personal and spiritual growth through traditional Chinese metaphysical arts.",
+        "Through education, consultation, and community building, we aim to create a space where Eastern wisdom can flourish and transform lives in the Western world."
+      ],
+      "image": "/images/altar-scene.svg",
+      "imageAlt": "Longhu Mountain Tianshi Mansion"
+    },
+    "values": {
+      "heading": "Our Values",
+      "items": [
+        {
+          "title": "Authenticity",
+          "icon": "✨",
+          "desc": "We maintain the integrity of traditional Taoist teachings while making them accessible to modern practitioners."
+        },
+        {
+          "title": "Compassion",
+          "icon": "🪷",
+          "desc": "We approach every consultation with empathy and understanding, recognizing each person's unique journey."
+        },
+        {
+          "title": "Community",
+          "icon": "🤝",
+          "desc": "We foster a supportive community where seekers can learn, grow, and share their experiences."
+        }
+      ]
+    },
+    "practitioner": {
+      "heading": "Our Taoist Practitioner",
+      "subheading": "Meet our dedicated practitioner who brings decades of experience and deep understanding of Taoist arts.",
+      "image": "/images/master-silhouette.svg"
+    }
+  },
+  "learn": {
+    "heading": "Learn",
+    "subheading": "Deepen your understanding of Taoist wisdom — explore our culture guides, articles, and answers",
+    "sections": [
+      {
+        "href": "/culture",
+        "icon": "📜",
+        "title": "Taoist Culture",
+        "desc": "Philosophy, history, scriptures, deities — a beginner-friendly gateway to Taoist wisdom"
+      },
+      {
+        "href": "/blog",
+        "icon": "✍️",
+        "title": "Blog",
+        "desc": "Guides and insights on Taoist practices, talismans, Qi Men, and spiritual living"
+      },
+      {
+        "href": "/faq",
+        "icon": "❓",
+        "title": "FAQ",
+        "desc": "Answers to the most common questions about our services, rituals, and products"
+      }
+    ]
+  },
+  "community": {
+    "heading": "Community",
+    "subheading": "Join a growing community of seekers on the Taoist path",
+    "chineseSub": "Connect, learn, and grow together",
+    "sections": [
+      {
+        "slug": "practices",
+        "title": "Daily Practices",
+        "icon": "🪷",
+        "desc": "Simple Taoist practices to incorporate into your daily life"
+      },
+      {
+        "slug": "meditation",
+        "title": "Meditation Guides",
+        "icon": "🧘",
+        "desc": "Taoist meditation techniques — sitting, moving, and breathing"
+      },
+      {
+        "slug": "forum",
+        "title": "Community Forum",
+        "icon": "💬",
+        "desc": "Connect with fellow seekers — share experiences and insights"
+      },
+      {
+        "slug": "events",
+        "title": "Events & Workshops",
+        "icon": "🗓",
+        "desc": "Upcoming rituals, workshops, and community gatherings"
+      }
+    ],
+    "details": {
+      "practices": {
+        "title": "Daily Practices",
+        "content": [
+          "Taoist practice is not about accumulating techniques — it is about returning to simplicity. Here are practices you can weave into your daily life.",
+          "Morning Qi Gong (5 min): Stand with feet shoulder-width apart, knees soft. Breathe naturally and gently sway. Imagine you are a tree — rooted, yet flexible. This simple movement aligns your Qi for the day.",
+          "Midday Pause (1 min): Stop whatever you are doing. Take three deep breaths. Look at the sky or a plant. Remind yourself: 'I am part of something larger.' This is a mini Wu Wei reset.",
+          "Evening Gratitude (5 min): Light a candle or incense. Sit quietly and recall one thing that went well today. Thank the Tao. This is not about prayer — it is about training your mind to notice harmony.",
+          "Weekly Nature Walk (30 min+): Walk without destination. Notice the way water flows, leaves move, birds interact. Nature is the primary teacher of Taoism. Let it teach you."
+        ]
+      },
+      "meditation": {
+        "title": "Meditation Guides",
+        "content": [
+          "Taoist meditation is distinct from many other traditions. Rather than concentrating or emptying the mind, the goal is effortless awareness — a state of alert, relaxed presence.",
+          "Embryonic Breathing (胎息): Sit comfortably. Place your tongue on the roof of your mouth. Breathe through your nose so softly that a feather held beneath your nostrils would not move. Imagine breathing like an unborn child — effortless and nourished.",
+          "Inner Smile Meditation: Gently bring your attention to your heart. Imagine a soft smile forming there — warm, gentle, accepting. Let this smile radiate to your organs, your limbs, and finally outward to the world.",
+          "Listening to Silence: Sit quietly and shift your attention from sounds to the silence between them. Do not try to silence your mind — just listen to the quiet that is already there, beneath all noise.",
+          "Walking Meditation: Walk slowly, naturally. With each step, feel the earth meeting your foot. Do not count steps or control breath. Just walk, fully present, as if you had nowhere to go and nothing to do."
+        ]
+      },
+      "forum": {
+        "title": "Community Forum",
+        "content": [
+          "The Sacred Tao Wisdom community forum is a place for seekers to connect, share experiences, and learn together.",
+          "This space is currently building. Join our WhatsApp community to connect with fellow seekers in real time — share your meditation experiences, ask questions about our services, and grow together on the Taoist path.",
+          "Topics we discuss: daily practice experiences, Qi Men reading insights, Feng Shui tips, talisman care, Taoist philosophy discussions, and upcoming events.",
+          "To join the community, reach out on WhatsApp and mention you would like to be added to the community group."
+        ]
+      },
+      "events": {
+        "title": "Events & Workshops",
+        "content": [
+          "We host regular online events and workshops for the community. All events are held via video call and open to everyone.",
+          "Monthly Qi Men Introduction (Free): A 60-minute introduction to Qi Men Dun Jia — what it is, how it works, and how to use it for daily decisions. Held the first Saturday of each month.",
+          "Quarterly Group Karmic Release Ceremony: A group version of our signature Karmic Release ritual at a reduced rate. Participants receive a group blessing talisman and ceremony video.",
+          "Feng Shui Workshop (Seasonal): Learn the basics of Taoist Feng Shui for your home. Bring your floor plan and get live guidance.",
+          "For upcoming event dates and registration, contact us on WhatsApp."
+        ]
+      }
+    }
+  },
+  "culture": {
+    "heading": "Taoist Culture",
+    "subheading": "Explore the rich traditions, philosophy, and practices of Taoism",
+    "topics": [
+      {
+        "slug": "philosophy",
+        "title": "Taoist Philosophy",
+        "icon": "☯",
+        "desc": "The core teachings of Tao — Wu Wei, Yin-Yang, and the Three Treasures"
+      },
+      {
+        "slug": "history",
+        "title": "History of Taoism",
+        "icon": "📜",
+        "desc": "From Laozi and the Tao Te Ching to modern Taoist practice"
+      },
+      {
+        "slug": "scriptures",
+        "title": "Sacred Scriptures",
+        "icon": "📖",
+        "desc": "Tao Te Ching, Zhuangzi, and the Taoist canon"
+      },
+      {
+        "slug": "deities",
+        "title": "Taoist Deities",
+        "icon": "✨",
+        "desc": "The celestial hierarchy — from the Three Pure Ones to local gods"
+      },
+      {
+        "slug": "beginners",
+        "title": "For Beginners",
+        "icon": "🌱",
+        "desc": "Start your journey — Taoist concepts explained simply"
+      }
+    ],
+    "details": {
+      "philosophy": {
+        "title": "Taoist Philosophy",
+        "content": [
+          "Taoist philosophy begins with the Tao (道) — the ineffable, natural way of the universe. It is not a religion with a single founder or doctrine, but a 2,500-year-old tradition of observing nature and aligning with its rhythms.",
+          "The core concept is Wu Wei (无为) — effortless action. Not laziness or passivity, but acting in harmony with the natural flow of events, like water finding its way around a rock.",
+          "Yin and Yang (阴阳) represent the interdependent opposites that create all phenomena — light/dark, active/passive, masculine/feminine. Harmony comes from balance, not from eliminating one or the other.",
+          "The Three Treasures — compassion (慈), frugality (俭), and humility (不敢为天下先) — are the ethical foundations of Taoist practice.",
+          "For modern seekers, Taoist philosophy offers a path away from the constant striving and anxiety of contemporary life, toward a simpler, more natural way of being."
+        ]
+      },
+      "history": {
+        "title": "History of Taoism",
+        "content": [
+          "Taoism traces its origins to the 6th century BCE and the legendary sage Laozi (老子), author of the Tao Te Ching (道德经). However, many elements of Taoist practice draw from even older shamanic traditions of ancient China.",
+          "During the Warring States period (475-221 BCE), Taoist philosophy flourished alongside Confucianism and Legalism. The Zhuangzi (庄子) was written during this time, offering a playful, poetic counterpoint to the Tao Te Ching.",
+          "The Celestial Masters (天师道) movement, founded by Zhang Daoling in 142 CE, established Taoism as an organized religion with rituals, priesthood, and talismanic traditions.",
+          "During the Tang Dynasty (618-907 CE), Taoism was the state religion. The imperial court patronized Taoist monasteries and ritual specialists.",
+          "Longhu Mountain (龙虎山) became the seat of the Celestial Masters tradition in the 10th century and remains one of the most important Taoist centers today."
+        ]
+      },
+      "scriptures": {
+        "title": "Sacred Scriptures",
+        "content": [
+          "The Taoist canon (道藏) contains over 1,400 texts, but the foundational scriptures accessible to modern seekers are the Tao Te Ching and the Zhuangzi.",
+          "The Tao Te Ching (道德经), with its 81 concise chapters, is the most translated Chinese text after the Bible.",
+          "The Zhuangzi (庄子) is a collection of stories, parables, and philosophical dialogues that challenge conventional thinking.",
+          "The I Ching (易经), while predating Taoism, is deeply integrated into Taoist practice.",
+          "For those beginning their study, we recommend starting with the Tao Te Ching, then moving to the Zhuangzi."
+        ]
+      },
+      "deities": {
+        "title": "Taoist Deities",
+        "content": [
+          "Taoism has a rich celestial hierarchy. At its head are the Three Pure Ones (三清) — the highest manifestations of the Tao itself.",
+          "The Jade Emperor (玉皇大帝) governs the celestial bureaucracy and is the most well-known Taoist deity.",
+          "The Eight Immortals (八仙) are legendary figures who achieved immortality through Taoist practice.",
+          "Local gods and city gods (城隍) watch over communities, while door gods (门神) protect homes.",
+          "For our services, the key deities invoked are the Three Pure Ones and the Celestial Masters."
+        ]
+      },
+      "beginners": {
+        "title": "For Beginners",
+        "content": [
+          "Welcome to Taoism. If you are new to this path, here is everything you need to know to start exploring.",
+          "First: Taoism is not a religion that demands belief. It is a way of observing and harmonizing with nature.",
+          "Start with the Tao Te Ching. Read one chapter a day. Sit with it.",
+          "Practice Wu Wei in small ways: notice where you are forcing things and try a gentler approach.",
+          "Above all, be patient. Taoism is a lifelong practice of returning to simplicity."
+        ]
+      }
+    }
+  },
+  "blog": {
+    "heading": "Blog",
+    "subheading": "Guides and insights on Taoist practices, talismans, Qi Men, and spiritual living",
+    "posts": {
+      "what-is-taoism": {
+        "title": "What Is Taoism in Simple Terms?",
+        "date": "2026-05-15",
+        "excerpt": "An introduction to Taoism — the ancient Chinese spiritual path of harmony with nature.",
+        "content": [
+          "Taoism (道教) is an ancient Chinese spiritual and philosophical tradition that dates back over 2,500 years.",
+          "Unlike many Western religions, Taoism does not revolve around a single deity or rigid doctrines. Instead, it invites you to observe nature, cultivate inner stillness, and align yourself with the rhythm of life itself.",
+          "The core text of Taoism is the Tao Te Ching (道德经), written by the sage Laozi (老子).",
+          "Taoist practice includes meditation, breath work (Qi Gong), ritual ceremonies, and the use of talismans (Fulu).",
+          "For many Western seekers, Taoism offers a path of simplicity, spontaneity, and deep connection with nature."
+        ]
+      },
+      "how-to-wear-talisman": {
+        "title": "How to Wear a Talisman Correctly",
+        "date": "2026-06-16",
+        "excerpt": "A guide on how to properly wear and care for your Taoist talisman.",
+        "content": [
+          "A Taoist talisman (Fulu) is a sacred object that has been consecrated through ritual. Treating it with respect honors both the tradition and your own intention.",
+          "Carry your talisman in a clean, dry place — a dedicated pouch, your wallet, or close to your body.",
+          "If your talisman is meant to be placed in your home, position it in a clean, elevated space facing outward toward the main entrance.",
+          "Do not let others touch or handle your talisman. It is personalized for you and your intention.",
+          "If the paper begins to age, you may respectfully retire it by burning it with incense or placing it in running water."
+        ]
+      },
+      "red-flags-fake-talismans": {
+        "title": "5 Red Flags When Buying Taoist Talismans Online",
+        "date": "2026-06-10",
+        "excerpt": "How to spot fake mass-produced talismans and find authentic Fulu.",
+        "content": [
+          "The growing interest in Taoist talismans has brought more sellers online — and with them, unfortunately, more printed souvenirs sold as 'blessed.' Here are five red flags to watch for.",
+          "1. No video of the consecration. If the seller cannot show you a video of your talisman being consecrated with your name, it is almost certainly not real.",
+          "2. Mass-produced printing. Real Fulu is hand-written with brush and ink on ritual paper.",
+          "3. No lineage or tradition to cite. Authentic Taoist priests come from established lineages.",
+          "4. One-price-fits-all. Genuine talismans are personalized to each person's name and intention.",
+          "5. Unrealistic promises. No ethical practitioner guarantees specific outcomes."
+        ]
+      },
+      "tai-sui-2026-guide": {
+        "title": "Tai Sui 2026: Your Complete Guide",
+        "date": "2026-06-16",
+        "excerpt": "Everything you need to know about Tai Sui 2026 — the Year of the Fire Horse.",
+        "content": [
+          "In Taoist astrology, Tai Sui (太岁) is the Year Lord — a powerful celestial deity who governs the energies of each year.",
+          "Which zodiac signs are affected in 2026? Those born in the Year of the Rat, Ox, Horse, and Rabbit.",
+          "What does this mean? When your zodiac sign conflicts with Tai Sui, you may experience more obstacles or unexpected changes.",
+          "How can you harmonize? The Tai Sui Talisman (太岁符) is a traditional Taoist remedy.",
+          "The most important thing is not to live in fear of Tai Sui. Awareness and proactive harmonization transform a challenging year into one of growth."
+        ]
+      },
+      "filmed-consecration-trust": {
+        "title": "Why Filmed Consecration Proof Matters",
+        "date": "2026-06-08",
+        "excerpt": "Why video proof is essential when ordering Taoist talismans online.",
+        "content": [
+          "When you order a Taoist talisman online, you are placing trust in a seller you may never meet.",
+          "What should a proper consecration video show? Your name being written, altar preparation, hand-brushing with visible strokes, and the final consecration prayer.",
+          "Without video proof, you are relying on a photo of a talisman that could be one of a hundred identical printed items.",
+          "This is why every talisman from Aura Cloud Tao includes a full ritual video sent to you before shipping.",
+          "If a seller cannot or will not provide a custom video, consider that a major red flag."
+        ]
+      },
+      "taoist-meditation-beginners": {
+        "title": "Taoist Meditation for Beginners",
+        "date": "2026-05-20",
+        "excerpt": "A beginner-friendly guide to Taoist meditation practices.",
+        "content": [
+          "Taoist meditation is fundamentally different from many other meditation traditions.",
+          "Begin with breathing. Sit comfortably, breathe naturally, and simply observe the breath.",
+          "Next, practice 'inner smile' — bring your attention to your heart center and imagine a soft, warm smile radiating from within.",
+          "Another foundational practice is 'listening to silence.'",
+          "Start with just five minutes a day. Consistency matters far more than duration."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "subheading": "The fastest way to reach us is through WhatsApp. We typically respond within a few hours.",
+    "cardHeading": "Get in Touch",
+    "cardText": "Click the button below to start a conversation on WhatsApp. Let us know which service you are interested in, and we will guide you through the process.",
+    "ctaText": "WhatsApp Us",
+    "responseTime": "We reply within a few hours and on weekends too · Mon-Fri 9:00-17:00 EST",
+    "emailLabel": "Email",
+    "hoursLabel": "Hours",
+    "hours": "Monday – Friday, 9:00 – 17:00 EST"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subheading": "Answers to the most common questions about our services, rituals, and products",
+    "faqs": [
+      {
+        "q": "How do I book a service?",
+        "a": "Simply tap 'Book on WhatsApp' on any service page. Our customer service will confirm your booking and guide you through the process."
+      },
+      {
+        "q": "Are the rituals real?",
+        "a": "Yes — all rituals are performed at the Longhu Mountain Tianshi Mansion altar. You receive a full video of your ceremony before shipping."
+      },
+      {
+        "q": "How do I know the ritual was performed?",
+        "a": "You will receive a custom video showing your name being written and the full consecration sequence — no exceptions."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Rituals are performed within 3-5 business days after booking. Shipping to US and Europe takes 7-14 days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "We accept payments via bank transfer, Wise, or PayPal — all handled through WhatsApp after booking."
+      },
+      {
+        "q": "Can I get a refund?",
+        "a": "Each ritual is personalized and performed for you. Once the ceremony is filmed with your name, returns are not accepted."
+      },
+      {
+        "q": "What is Qi Men Dun Jia?",
+        "a": "Qi Men Dun Jia (奇门遁甲) is an ancient Chinese strategic divination system used for decision-making and timing."
+      },
+      {
+        "q": "Do I need to know Chinese or Taoism?",
+        "a": "Not at all. All services are offered in English and designed for Western seekers."
+      },
+      {
+        "q": "Can I buy products as gifts?",
+        "a": "Absolutely. Just let us know the recipient's name and intention during booking."
+      }
+    ],
+    "stillQuestions": "Still have questions?",
+    "cta": "Chat on WhatsApp"
+  }
+}
