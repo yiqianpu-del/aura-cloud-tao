@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import siteContent from '@/data/siteContent.json';
+import ConnectCta from '@/components/connect-cta';
 
 const l = siteContent.learn;
 
@@ -23,6 +24,10 @@ export default function LearnPage() {
             </Link>
           ))}
         </div>
+
+        {/* Connect CTA */}
+        <ConnectCta source="learn" variant="banner" />
+
       </div>
     </div>
   );

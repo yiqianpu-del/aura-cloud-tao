@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import postsData from '@/data/posts.json';
+import ConnectCta from '@/components/connect-cta';
 
 export const metadata: Metadata = {
   title: 'Blog | Sacred Tao Wisdom',
@@ -128,6 +129,9 @@ export default function BlogPage() {
             </article>
           ))}
         </div>
+
+        {/* Connect CTA */}
+        <ConnectCta source="blog" variant="banner" />
 
         {/* Structured Data for SEO */}
         <script

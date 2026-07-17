@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import siteContent from '@/data/siteContent.json';
+import ConnectCta from '@/components/connect-cta';
 import { siteConfig } from '@/data/site-config';
 
 const a = siteContent.about;
@@ -62,6 +63,10 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        {/* Connect CTA */}
+        <ConnectCta source="about" variant="banner" />
+
       </div>
     </div>
   );

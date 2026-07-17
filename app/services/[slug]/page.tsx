@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { services } from '@/data/services';
 import { products } from '@/data/products';
 import { siteConfig } from '@/data/site-config';
+import ConnectCta from '@/components/connect-cta';
 
 const ritualServices = services.filter(s => s.category === 'ritual');
 
@@ -143,8 +144,13 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
           </div>
         </section>
 
-        <div className="text-center pt-8 border-t border-gray-200 space-y-3">
-          <a href={siteConfig.whatsappLink} target="_blank" className="btn btn-primary btn-lg">Book This Ritual on WhatsApp</a>
+        {/* Connect CTA */}
+        <ConnectCta
+          source={`service-${service.slug}`}
+          variant="banner"
+        />
+
+        <div className="text-center pt-4">
           <p className="text-sm text-gray-500"><Link href="/services" className="text-accent hover:underline">← Back to all rituals</Link></p>
         </div>
       </article>

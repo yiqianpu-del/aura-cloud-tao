@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { products } from '@/data/products';
 import siteContent from '@/data/siteContent.json';
+import ConnectCta from '@/components/connect-cta';
 
 const s = siteContent.shop;
 
@@ -27,7 +28,7 @@ export default function ShopPage() {
             </Link>
           ))}
         </div>
-        <div className="text-center mt-12"><a href="/api/redirect" className="btn btn-primary btn-lg">{s.cta}</a></div>
+        <ConnectCta source="shop" variant="banner" />
       </div>
     </div>
   );

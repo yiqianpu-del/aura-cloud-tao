@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { services } from '@/data/services';
 import { products } from '@/data/products';
 import siteContent from '@/data/siteContent.json';
+import ConnectCta from '@/components/connect-cta';
 
 const s = siteContent.services;
 
@@ -49,7 +50,7 @@ export default function DivinationPage() {
           ))}
         </div>
 
-        <div className="text-center"><a href="/api/redirect" className="btn btn-primary btn-lg">{s.divinationPage.cta}</a></div>
+        <ConnectCta source="divination" variant="banner" />
       </div>
     </div>
   );

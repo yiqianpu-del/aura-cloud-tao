@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { services, serviceCategories } from '@/data/services';
 import siteContent from '@/data/siteContent.json';
+import ConnectCta from '@/components/connect-cta';
 
 const s = siteContent.services.page;
 
@@ -41,9 +42,8 @@ export default function ServicesPage() {
             </Link>
           ))}
         </div>
-        <div className="text-center mt-12">
-          <a href="/api/redirect" className="btn btn-primary btn-lg">{s.cta}</a>
-        </div>
+        {/* Connect CTA */}
+        <ConnectCta source="services" variant="banner" />
       </div>
     </div>
   );

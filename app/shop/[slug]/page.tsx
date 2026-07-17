@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { products } from '@/data/products';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/site-config';
+import ConnectCta from '@/components/connect-cta';
 
 const categorySlugMap: Record<string, string> = {
   ritual: 'services',
@@ -71,8 +72,15 @@ export default function ProductDetail({ params }: { params: { slug: string } }) 
           </section>
         )}
 
-        <div className="text-center pt-8 border-t border-gray-200 space-y-3">
-          <a href={siteConfig.whatsappLink} target="_blank" className="btn btn-primary btn-lg">Order on WhatsApp</a>
+        {/* Connect CTA */}
+        <ConnectCta
+          source={`shop-${p.slug}`}
+          variant="banner"
+          title="Have Questions Before Ordering?"
+          subtitle="Ask Master Chen about which product suits your needs — he responds personally within 24 hours."
+        />
+
+        <div className="text-center pt-4">
           <p className="text-sm text-gray-500"><Link href="/shop" className="text-accent hover:underline">← Back to shop</Link></p>
         </div>
       </article>

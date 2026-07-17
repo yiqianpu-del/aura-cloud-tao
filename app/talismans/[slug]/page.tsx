@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { talismans } from '@/data/talismans';
 import { siteConfig } from '@/data/site-config';
+import ConnectCta from '@/components/connect-cta';
 
 const categoryImages: Record<string, string> = {
   wealth: '/images/talisman-wealth.svg',
@@ -63,7 +64,15 @@ export default function TalismanDetail({ params }: { params: { slug: string } })
           <Link href="/shop/talisman-decor" className="btn btn-gold">Explore Talisman Home Decor →</Link>
         </div>
 
-        <div className="text-center mt-8 pt-8 border-t border-gray-200">
+        {/* Connect CTA */}
+        <ConnectCta
+          source={`talisman-${t.slug}`}
+          variant="banner"
+          title="Let Master Chen Guide Your Choice"
+          subtitle="Every talisman is personalized. Tell Master Chen your intention and birth details — he will recommend the right one."
+        />
+
+        <div className="text-center pt-4">
           <Link href="/talismans" className="text-accent hover:underline">← Back to all talismans</Link>
         </div>
       </div>
