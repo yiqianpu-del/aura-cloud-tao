@@ -54,8 +54,8 @@
       "description": "Hand-written talismans, Qi Men readings, and sacred ceremonies."
     },
     "features": {
-      "heading": "Why Seekers Trust These Taoist Practices",
-      "subheading": "One practitioner. One altar. One talisman.",
+      "heading": "Authentic Taoist Practices for the Modern Seeker",
+      "subheading": "One priest. One altar. One talisman — hand-written, blessed, and filmed.",
       "chineseSub": "一人一坛一符，正统科仪",
       "sections": [
         {
@@ -123,16 +123,19 @@
       "heading": "Our Core Values",
       "items": [
         {
-          "title": "Authenticity",
-          "description": "Hand-written by a gaogong priest."
+          "icon": "🪷",
+          "title": "Authentic Lineage",
+          "desc": "Every talisman is hand-written by a Longhu Mountain gaogong priest in a direct lineage of the Tianshi Mansion tradition."
         },
         {
-          "title": "Transparency",
-          "description": "Full ceremony video sent before shipping."
+          "icon": "🎥",
+          "title": "Full Ceremony Video",
+          "desc": "Before your talisman ships, you receive a complete video recording of your consecration ceremony — proof the ritual was performed."
         },
         {
-          "title": "Compassion",
-          "description": "Each ritual is personalized."
+          "icon": "🤝",
+          "title": "Personalized for You",
+          "desc": "Each ritual is performed with your name spoken and your specific intention inscribed into the talisman. No two are ever the same."
         }
       ]
     },
