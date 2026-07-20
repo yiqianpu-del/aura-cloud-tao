@@ -1,0 +1,121 @@
+{
+  "routing": {
+    "defaultChannel": "whatsapp",
+    "channels": {
+      "whatsapp": {
+        "type": "whatsapp",
+        "target": "+85256151619"
+      },
+      "telegram": {
+        "type": "telegram",
+        "target": "@sacredtao_wisdom"
+      },
+      "email": {
+        "type": "email",
+        "target": "contact@auracloudtao.com"
+      }
+    },
+    "messages": {
+      "default": {
+        "text": "Hi, I'm interested in your Taoist services. Could you tell me more?"
+      },
+      "homepage": {
+        "text": "Hi, I just visited your site and I'm curious about your Taoist offerings. Can you guide me?"
+      },
+      "services": {
+        "text": "Hi, I'm interested in your ritual services at Longhu Mountain. Could you share more details?"
+      },
+      "services-ritual": {
+        "text": "Hi, I'd like to know more about your ritual services. What options are available?"
+      },
+      "services-karmic-release": {
+        "text": "Hi, I'm interested in the karmic release ritual. Can you tell me how it works?"
+      },
+      "services-pet-memorial": {
+        "text": "Hi, I'd like to inquire about the pet memorial ceremony."
+      },
+      "services-space-energy": {
+        "text": "Hi, I'm interested in space energy alignment. What does it involve?"
+      },
+      "divination": {
+        "text": "Hi, I'm curious about Qi Men divination. Could you explain how it works?"
+      },
+      "divination-qi-men-reading": {
+        "text": "Hi, I'd like to book a Qi Men Dun Jia reading. What information do you need from me?"
+      },
+      "feng-shui": {
+        "text": "Hi, I'm interested in Feng Shui consultation for my home/office. Can you help?"
+      },
+      "shop": {
+        "text": "Hi, I'd like to browse your spiritual products. Can you recommend something for me?"
+      },
+      "shop-talisman": {
+        "text": "Hi, I'm interested in purchasing a talisman. Which one would you recommend for my situation?"
+      },
+      "shop-qi-men-deck": {
+        "text": "Hi, I'd like to learn more about the Qi Men card deck."
+      },
+      "shop-talisman-decor": {
+        "text": "Hi, I'm interested in the talisman decor items."
+      },
+      "packages": {
+        "text": "Hi, I'd like to order a ritual package. Could you guide me through the options?"
+      },
+      "free-reading": {
+        "text": "Hi, I'd like a free Qi Men Quick Reading.\n\nName: {{name}}\nQuestion: {{question}}\n\n(Sent from sacred-tao-wisdom.com free reading form)"
+      },
+      "about": {
+        "text": "Hi, I'd like to connect with Master Chen Wei. Can you tell me more about his background?"
+      },
+      "learn": {
+        "channel": "email",
+        "text": "Hi, I'm interested in learning about Taoist philosophy and practices. Where should I start?"
+      },
+      "culture": {
+        "channel": "email",
+        "text": "Hi, I'd like to explore Taoist culture further. Can you recommend resources?"
+      },
+      "blog": {
+        "channel": "email",
+        "text": "Hi, I just read your blog and I'm interested in learning more."
+      },
+      "community": {
+        "channel": "telegram",
+        "text": "Hi, I'd like to join your Taoist community. How can I get involved?"
+      },
+      "contact": {
+        "channel": "email",
+        "text": "Hi, I have a question about your services. Can you help me?"
+      },
+      "faq": {
+        "channel": "email",
+        "text": "Hi, I've read your FAQ but still have a question. Can you help?"
+      },
+      "__campaign_banner": {
+        "text": "Hi, I saw your banner on the {{source}} page and I'm interested."
+      },
+      "__campaign_minimal": {
+        "text": "Hi, I'd like a quick question answered about {{source}}."
+      },
+      "quiz-result-protection": {
+        "channel": "whatsapp",
+        "text": "Hi, I just completed the Energy Guidance Assessment and my result is Protection. I'd like to learn more about the Personal Protection talisman."
+      },
+      "quiz-result-health": {
+        "channel": "whatsapp",
+        "text": "Hi, I just completed the Energy Guidance Assessment and my result is Renewal. I'd like to learn more about the Health & Vitality talisman."
+      },
+      "quiz-result-love": {
+        "channel": "whatsapp",
+        "text": "Hi, I just completed the Energy Guidance Assessment and my result is Connection. I'd like to learn more about the Love & Harmony talisman."
+      },
+      "quiz-result-wealth": {
+        "channel": "whatsapp",
+        "text": "Hi, I just completed the Energy Guidance Assessment and my result is Abundance. I'd like to learn more about the Prosperity & Flow talisman."
+      },
+      "__campaign_quiz": {
+        "text": "Hi, I just completed the Energy Guidance Assessment on your site and I'd like guidance."
+      }
+    }
+  }
+}

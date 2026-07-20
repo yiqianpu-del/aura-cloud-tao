@@ -1,0 +1,26 @@
+{
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subheading": "Everything you need to know about our Taoist services and products",
+    "faqs": [
+      {
+        "q": "How long does international shipping take?",
+        "a": "5-12 business days via FedEx/DHL."
+      },
+      {
+        "q": "Can I track my order?",
+        "a": "Yes, tracking is provided."
+      },
+      {
+        "q": "What is your return policy?",
+        "a": "Due to the sacred nature of our products, all sales are final."
+      },
+      {
+        "q": "How are the talismans consecrated?",
+        "a": "By a gaogong priest at Longhu Mountain."
+      }
+    ],
+    "stillQuestions": "Still have questions? Reach out on WhatsApp — we're happy to help.",
+    "cta": "Ask Us on WhatsApp"
+  }
+}

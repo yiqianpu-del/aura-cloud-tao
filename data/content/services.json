@@ -1,0 +1,18 @@
+{
+  "services": {
+    "page": {
+      "heading": "Taoist Ritual Services",
+      "subheading": "Authentic Longhu Mountain ceremonies — filmed and shipped worldwide"
+    },
+    "divinationPage": {
+      "heading": "Qi Men Dun Jia Divination",
+      "subheading": "Ancient Chinese strategic oracle for modern guidance",
+      "chineseSub": "奇门遁甲 · 古老智慧，现代启迪"
+    },
+    "fengshuiPage": {
+      "heading": "Feng Shui Consultation",
+      "subheading": "Harmonize your space with classical Feng Shui wisdom",
+      "chineseSub": "风水 · 空间能量平衡"
+    }
+  }
+}

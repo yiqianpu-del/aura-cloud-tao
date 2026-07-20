@@ -1,0 +1,40 @@
+{
+  "about": {
+    "heading": "About Sacred Tao Wisdom",
+    "subheading": "Bridging ancient Taoist traditions with modern seekers worldwide",
+    "mission": {
+      "heading": "Our Mission",
+      "paragraphs": [
+        "We preserve and share authentic Taoist teachings from Longhu Mountain.",
+        "Every talisman is hand-written with intention, every ritual filmed."
+      ],
+      "image": "/images/hero-altar.jpg",
+      "imageAlt": "Longhu Mountain Tianshi Mansion - Sacred Taoist altar"
+    },
+    "values": {
+      "heading": "Our Core Values",
+      "items": [
+        {
+          "icon": "🪷",
+          "title": "Authentic Lineage",
+          "desc": "Every talisman is hand-written by a Longhu Mountain gaogong priest in a direct lineage of the Tianshi Mansion tradition."
+        },
+        {
+          "icon": "🎥",
+          "title": "Full Ceremony Video",
+          "desc": "Before your talisman ships, you receive a complete video recording of your consecration ceremony — proof the ritual was performed."
+        },
+        {
+          "icon": "🤝",
+          "title": "Personalized for You",
+          "desc": "Each ritual is performed with your name spoken and your specific intention inscribed into the talisman. No two are ever the same."
+        }
+      ]
+    },
+    "practitioner": {
+      "heading": "Meet Our Master",
+      "subheading": "A direct lineage holder of Longhu Mountain tradition.",
+      "image": "/images/master-silhouette.svg"
+    }
+  }
+}

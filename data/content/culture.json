@@ -1,0 +1,20 @@
+{
+  "culture": {
+    "heading": "Taoist Culture",
+    "subheading": "Explore the rich heritage of Taoist traditions, arts, and wisdom",
+    "topics": [
+      {
+        "title": "Taoist Philosophy",
+        "description": "Core teachings of Laozi and Zhuangzi"
+      },
+      {
+        "title": "History & Traditions",
+        "description": "2,500 years of Taoist heritage"
+      },
+      {
+        "title": "Sacred Texts",
+        "description": "Tao Te Ching, Zhuangzi, and more"
+      }
+    ]
+  }
+}
