@@ -1,1 +1,1 @@
-{"buildCommand":"node scripts/merge-content.mjs && next build","installCommand":"pnpm install","outputDirectory":".next"}
+{}
