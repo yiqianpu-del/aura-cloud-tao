@@ -1,74 +1,19 @@
 {
   "community": {
-    "heading": "Community",
-    "subheading": "Join a growing community of seekers on the Taoist path",
-    "chineseSub": "Connect, learn, and grow together",
+    "heading": "Join Our Community",
+    "subheading": "Connect with fellow seekers on the Taoist path",
+    "chineseSub": "道系社区 · 分享与成长",
     "sections": [
       {
-        "slug": "practices",
-        "title": "Daily Practices",
-        "icon": "🪷",
-        "desc": "Simple Taoist practices to incorporate into your daily life"
+        "title": "Discussion Group",
+        "description": "Share experiences and insights",
+        "href": "/"
       },
       {
-        "slug": "meditation",
-        "title": "Meditation Guides",
-        "icon": "🧘",
-        "desc": "Taoist meditation techniques — sitting, moving, and breathing"
-      },
-      {
-        "slug": "forum",
-        "title": "Community Forum",
-        "icon": "💬",
-        "desc": "Connect with fellow seekers — share experiences and insights"
-      },
-      {
-        "slug": "events",
-        "title": "Events & Workshops",
-        "icon": "🗓",
-        "desc": "Upcoming rituals, workshops, and community gatherings"
+        "title": "Events",
+        "description": "Online workshops and ceremonies",
+        "href": "/"
       }
-    ],
-    "details": {
-      "practices": {
-        "title": "Daily Practices",
-        "content": [
-          "Taoist practice is not about accumulating techniques — it is about returning to simplicity. Here are practices you can weave into your daily life.",
-          "Morning Qi Gong (5 min): Stand with feet shoulder-width apart, knees soft. Breathe naturally and gently sway. Imagine you are a tree — rooted, yet flexible. This simple movement aligns your Qi for the day.",
-          "Midday Pause (1 min): Stop whatever you are doing. Take three deep breaths. Look at the sky or a plant. Remind yourself: 'I am part of something larger.' This is a mini Wu Wei reset.",
-          "Evening Gratitude (5 min): Light a candle or incense. Sit quietly and recall one thing that went well today. Thank the Tao. This is not about prayer — it is about training your mind to notice harmony.",
-          "Weekly Nature Walk (30 min+): Walk without destination. Notice the way water flows, leaves move, birds interact. Nature is the primary teacher of Taoism. Let it teach you."
-        ]
-      },
-      "meditation": {
-        "title": "Meditation Guides",
-        "content": [
-          "Taoist meditation is distinct from many other traditions. Rather than concentrating or emptying the mind, the goal is effortless awareness — a state of alert, relaxed presence.",
-          "Embryonic Breathing (胎息): Sit comfortably. Place your tongue on the roof of your mouth. Breathe through your nose so softly that a feather held beneath your nostrils would not move. Imagine breathing like an unborn child — effortless and nourished.",
-          "Inner Smile Meditation: Gently bring your attention to your heart. Imagine a soft smile forming there — warm, gentle, accepting. Let this smile radiate to your organs, your limbs, and finally outward to the world.",
-          "Listening to Silence: Sit quietly and shift your attention from sounds to the silence between them. Do not try to silence your mind — just listen to the quiet that is already there, beneath all noise.",
-          "Walking Meditation: Walk slowly, naturally. With each step, feel the earth meeting your foot. Do not count steps or control breath. Just walk, fully present, as if you had nowhere to go and nothing to do."
-        ]
-      },
-      "forum": {
-        "title": "Community Forum",
-        "content": [
-          "The Sacred Tao Wisdom community forum is a place for seekers to connect, share experiences, and learn together.",
-          "This space is currently building. Join our WhatsApp community to connect with fellow seekers in real time — share your meditation experiences, ask questions about our services, and grow together on the Taoist path.",
-          "Topics we discuss: daily practice experiences, Qi Men reading insights, Feng Shui tips, talisman care, Taoist philosophy discussions, and upcoming events.",
-          "To join the community, reach out on WhatsApp and mention you would like to be added to the community group."
-        ]
-      },
-      "events": {
-        "title": "Events & Workshops",
-        "content": [
-          "We host regular online events and workshops for the community. All events are held via video call and open to everyone.",
-          "Monthly Qi Men Introduction (Free): A 60-minute introduction to Qi Men Dun Jia — what it is, how it works, and how to use it for daily decisions. Held the first Saturday of each month.",
-          "Quarterly Group Karmic Release Ceremony: A group version of our signature Karmic Release ritual at a reduced rate. Participants receive a group blessing talisman and ceremony video.",
-          "Feng Shui Workshop (Seasonal): Learn the basics of Taoist Feng Shui for your home. Bring your floor plan and get live guidance.",
-          "For upcoming event dates and registration, contact us on WhatsApp."
-        ]
-      }
-    }
+    ]
   }
 }

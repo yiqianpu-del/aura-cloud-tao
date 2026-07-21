@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts loaded via <link> in layout.tsx for non-blocking loading */
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-cream text-ink font-sans antialiased; }
+  h1, h2, h3, h4 { @apply font-serif; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center px-6 py-3 font-semibold transition-all duration-200 rounded-sm text-sm tracking-wider uppercase; }
+  .btn-primary { @apply bg-accent text-white hover:bg-accent/90; }
+  .btn-gold { @apply bg-gold text-ink hover:bg-gold/90; }
+  .btn-outline { @apply border-2 border-ink text-ink hover:bg-ink hover:text-white; }
+  .btn-lg { @apply px-8 py-4 text-base; }
+  .btn-sm { @apply px-4 py-2 text-xs; }
+  .section { @apply py-16 md:py-24 px-4; }
+  .container { @apply max-w-6xl mx-auto; }
+  .card { @apply rounded-sm border border-gray-200 bg-white p-6 transition-all duration-300 hover:shadow-lg; }
+  .section-sub { @apply text-gray-600 max-w-2xl mx-auto text-center; }
+  .zh { @apply text-sm text-gray-500 italic; }
+}
+
+.gradient-border { border-left: 3px solid; border-image: linear-gradient(to bottom, #c9a96e, #c43a31) 1; }
+.timeline-line { @apply absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 hidden md:block; }
+.step-num { @apply flex items-center justify-center w-10 h-10 rounded-full bg-gold text-ink font-bold text-lg; }

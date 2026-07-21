@@ -1,25 +1,17 @@
 {
   "learn": {
-    "heading": "Learn",
-    "subheading": "Deepen your understanding of Taoist wisdom — explore our culture guides, articles, and answers",
+    "heading": "Learn Taoist Wisdom",
+    "subheading": "Explore the depths of Taoist philosophy, practices, and culture",
     "sections": [
       {
-        "href": "/culture",
-        "icon": "📜",
-        "title": "Taoist Culture",
-        "desc": "Philosophy, history, scriptures, deities — a beginner-friendly gateway to Taoist wisdom"
+        "title": "Philosophy",
+        "description": "Tao Te Ching, Wu Wei, and the art of effortless living",
+        "href": "/"
       },
       {
-        "href": "/blog",
-        "icon": "✍️",
-        "title": "Blog",
-        "desc": "Guides and insights on Taoist practices, talismans, Qi Men, and spiritual living"
-      },
-      {
-        "href": "/faq",
-        "icon": "❓",
-        "title": "FAQ",
-        "desc": "Answers to the most common questions about our services, rituals, and products"
+        "title": "Meditation",
+        "description": "Taoist meditation and Qi Gong practices",
+        "href": "/"
       }
     ]
   }

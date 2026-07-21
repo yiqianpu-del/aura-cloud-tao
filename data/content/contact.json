@@ -1,13 +1,13 @@
 {
   "contact": {
     "heading": "Contact Us",
-    "subheading": "The fastest way to reach us is through WhatsApp. We typically respond within a few hours.",
-    "cardHeading": "Get in Touch",
-    "cardText": "Click the button below to start a conversation on WhatsApp. Let us know which service you are interested in, and we will guide you through the process.",
-    "ctaText": "WhatsApp Us",
-    "responseTime": "We reply within a few hours and on weekends too · Mon-Fri 9:00-17:00 EST",
+    "subheading": "We're here to help you on your spiritual journey",
+    "cardHeading": "Send us a message on WhatsApp",
+    "cardText": "Get a quick response from our team. We typically reply within 2 hours.",
+    "ctaText": "Message Us on WhatsApp",
+    "responseTime": "We typically reply within 2 hours",
     "emailLabel": "Email",
     "hoursLabel": "Hours",
-    "hours": "Monday – Friday, 9:00 – 17:00 EST"
+    "hours": "Mon-Fri 9:00-17:00 EST"
   }
 }

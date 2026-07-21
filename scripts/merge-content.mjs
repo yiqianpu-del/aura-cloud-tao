@@ -1,10 +1,15 @@
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const contentDir = join(__dirname, '..', 'data', 'content');
-const outputPath = join(__dirname, '..', 'data', 'siteContent.json');
+const outputPath = join(__dirname, '..', 'src', 'data', 'siteContent.json');
+
+if (!existsSync(contentDir)) {
+  console.log('Content directory not found, using existing siteContent.json');
+  process.exit(0);
+}
 
 const files = readdirSync(contentDir).filter(f => f.endsWith('.json'));
 const merged = {};
@@ -15,4 +20,4 @@ for (const file of files) {
 }
 
 writeFileSync(outputPath, JSON.stringify(merged, null, 2));
-console.log(`Merged ${files.length} files -> siteContent.json (${Object.keys(merged).length} top keys)`);
+console.log(`Merged ${files.length} files -> src/data/siteContent.json`);
