@@ -11,6 +11,8 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
+local_backend: true
+
 # 本地开发时使用测试模式
 
 collections:
