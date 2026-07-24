@@ -1,0 +1,49 @@
+{
+  "site": {
+    "name": "Aura Cloud Tao",
+    "tagline": "Ancient Taoist Wisdom for Modern Life",
+    "description": "Authentic Taoist rituals, hand-written talismans, Qi Men divination, and Feng Shui consultation from Longhu Mountain.",
+    "url": "https://auracloudtao.com",
+    "whatsappLink": "https://wa.me/85256151619",
+    "whatsapp": "+85256151619",
+    "email": "contact@auracloudtao.com",
+    "social": {},
+    "masterName": "Master Chen Wei",
+    "masterTitle": "Senior Taoist Practitioner",
+    "masterBio": "30+ years of experience from Longhu Mountain.",
+    "navigation": [
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Divination",
+        "href": "/divination"
+      },
+      {
+        "label": "Feng Shui",
+        "href": "/feng-shui"
+      },
+      {
+        "label": "Shop",
+        "href": "/shop"
+      },
+      {
+        "label": "Quiz",
+        "href": "/quiz"
+      },
+      {
+        "label": "Learn",
+        "href": "/learn"
+      },
+      {
+        "label": "Community",
+        "href": "/community"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "homepage": {
+    "hero": {
+      "backgroundImage": "/images/hero-altar.jpg",
+      "title": "Ancient Taoist Wisdom for Modern Life",
+      "subtitle": "Authentic ritual services · Qi Men divination · Feng Shui consultation",
+      "description": "Hand-written talismans, Qi Men readings, and sacred ceremonies."
+    },
+    "features": {
+      "heading": "Authentic Taoist Practices for the Modern Seeker",
+      "subheading": "One priest. One altar. One talisman — hand-written, blessed, and filmed.",
+      "chineseSub": "一人一坛一符，正统科仪",
+      "sections": [
+        {
+          "icon": "🪷",
+          "title": "Health & Inner Peace",
+          "titleCn": "恢复能量平衡",
+          "description": "Health talismans",
+          "href": "/talismans#cat-health"
+        },
+        {
+          "icon": "✨",
+          "title": "Energy & Prosperity",
+          "titleCn": "吸引正能量",
+          "description": "Wealth talismans",
+          "href": "/talismans#cat-wealth"
+        },
+        {
+          "icon": "🛡",
+          "title": "Protection & Safety",
+          "titleCn": "驱除负能量",
+          "description": "Protection talismans",
+          "href": "/talismans#cat-protection"
+        },
+        {
+          "icon": "〰",
+          "title": "Luck & Yin Yang Flow",
+          "titleCn": "支持您的心愿",
+          "description": "Luck talismans",
+          "href": "/talismans#cat-luck"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Common questions about our services",
+      "faqs": [
+        {
+          "q": "What is a Taoist talisman?",
+          "a": "A sacred hand-written charm."
+        },
+        {
+          "q": "How do I receive my ritual video?",
+          "a": "We send it before shipping."
+        },
+        {
+          "q": "How long does delivery take?",
+          "a": "5-12 business days."
+        }
+      ]
+    }
+  }
+}

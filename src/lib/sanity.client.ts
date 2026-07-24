@@ -1,8 +1,12 @@
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'aaarojtl';
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
-const apiVersion = '2024-01-01';
+const PROJECT_ID = 'bar29scb';
+const DATASET = 'production';
+const API_VERSION = 'v2024-01-01';
 
-export const sanityConfig = { projectId, dataset, apiVersion };
+export const sanityConfig = {
+  projectId: PROJECT_ID,
+  dataset: DATASET,
+  apiVersion: API_VERSION,
+};
 
 export async function sanityFetch<T = any>(query: string, params?: Record<string, string>, tags?: string[]): Promise<T | null> {
   const encodedQuery = encodeURIComponent(query);
@@ -10,7 +14,7 @@ export async function sanityFetch<T = any>(query: string, params?: Record<string
     ? '&' + Object.entries(params).map(([k, v]) => `$${k}=${encodeURIComponent(`"${v}"`)}`).join('&')
     : '';
 
-  const url = `https://${projectId}.api.sanity.io/${apiVersion}/data/query/${dataset}?query=${encodedQuery}${encodedParams}`;
+  const url = `https://${PROJECT_ID}.api.sanity.io/${API_VERSION}/data/query/${DATASET}?query=${encodedQuery}${encodedParams}`;
 
   try {
     const res = await fetch(url, {
