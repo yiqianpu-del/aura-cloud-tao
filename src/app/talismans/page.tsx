@@ -5,7 +5,7 @@ import ConnectCta from '@/components/connect-cta';
 export const revalidate = 3600;
 
 export default async function TalismansPage() {
-  const talismans = await getTalismans();
+  const talismans = await getTalismans() || [];
 
   const iconMap: Record<string, string> = { wealth: '✨', protection: '🛡', health: '🪷', luck: '〰' };
 

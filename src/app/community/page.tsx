@@ -11,7 +11,7 @@ export const metadata = {
 
 export default async function CommunityPage() {
   const pc = await getPageContent('community');
-  const posts = await getPosts();
+  const posts = await getPosts() || [];
   let community: any = {};
   try { community = pc?.data ? JSON.parse(pc.data) : {}; } catch {}
 
@@ -41,7 +41,7 @@ export default async function CommunityPage() {
       {community.sections?.length > 0 && (
         <section className="max-w-4xl mx-auto px-4 pb-16">
           <div className="grid md:grid-cols-2 gap-6">
-            {community.sections.map((s: any) => (
+            {(community.sections || []).map((s: any) => (
               <Link key={s.href} href={s.href} className="card hover:border-gold/50 group text-center p-8">
                 <h3 className="font-bold text-xl group-hover:text-accent">{s.title}</h3>
                 <p className="text-sm text-gray-600 mt-2">{s.description}</p>

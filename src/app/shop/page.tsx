@@ -6,7 +6,7 @@ import ConnectCta from '@/components/connect-cta';
 export const revalidate = 3600;
 
 export default async function ShopPage() {
-  const products = await getProducts();
+  const products = await getProducts() || [];
   const pageContent = await getPageContent('shop');
   const heading = pageContent?.heading || 'Shop';
   const subheading = pageContent?.subheading || '';

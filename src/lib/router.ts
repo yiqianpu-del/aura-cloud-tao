@@ -9,7 +9,7 @@
  * Designed to accept email, Telegram, etc. by adding a channel in config.
  */
 
-import siteContent from '@/data/siteContent.json';
+import routingData from '@/data/routing.json';
 
 // ── Public interface ─────────────────────────────────────────────────
 
@@ -74,9 +74,10 @@ interface ChannelConfig {
 // ── Config resolution ────────────────────────────────────────────────
 
 function getRoutingConfig(): RoutingConfig {
-  const rtg = (siteContent as any).routing;
+  const rtg = (routingData as any).routing;
+  const fallbackWhatsApp = '+85256151619';
   return {
-    defaultTarget: rtg?.channels?.whatsapp?.target ?? siteContent.site.whatsapp ?? '+85256151619',
+    defaultTarget: rtg?.channels?.whatsapp?.target ?? fallbackWhatsApp,
     defaultChannel: rtg?.defaultChannel ?? 'whatsapp',
     channels: rtg?.channels ?? {},
     messages: rtg?.messages ?? {},

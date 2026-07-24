@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 export default async function BlogPage() {
-  const posts = await getPosts();
+  const posts = await getPosts() || [];
   const featuredPosts = posts.filter((p: any) => p.featured);
   const regularPosts = posts.filter((p: any) => !p.featured);
 

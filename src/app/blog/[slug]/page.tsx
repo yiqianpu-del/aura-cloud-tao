@@ -7,7 +7,7 @@ export const revalidate = 3600;
 
 export async function generateStaticParams() {
   const posts = await getPosts();
-  return posts.map((p: any) => ({ slug: p.slug }));
+  return (posts || []).map((p: any) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {

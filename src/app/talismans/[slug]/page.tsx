@@ -6,7 +6,7 @@ export const revalidate = 3600;
 
 export async function generateStaticParams() {
   const talismans = await getTalismans();
-  return talismans.map((t: any) => ({ slug: t.slug }));
+  return (talismans || []).map((t: any) => ({ slug: t.slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
