@@ -1,23 +1,23 @@
 import Link from 'next/link';
-import { getTalismans } from '@/lib/sanity.queries';
+import { getAllTalismans } from '@/lib/sanity.queries';
 import ConnectCta from '@/components/connect-cta';
 
 export const revalidate = 3600;
 
 export async function generateStaticParams() {
-  const talismans = await getTalismans();
+  const talismans = await getAllTalismans();
   return (talismans || []).map((t: any) => ({ slug: t.slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const talismans = await getTalismans();
+  const talismans = await getAllTalismans();
   const t = talismans.find((t: any) => t.slug === params.slug);
   if (!t) return { title: 'Not Found' };
   return { title: `${t.name} | Sacred Tao Wisdom`, description: t.description };
 }
 
 export default async function TalismanPage({ params }: { params: { slug: string } }) {
-  const talismans = await getTalismans();
+  const talismans = await getAllTalismans();
   const t = talismans.find((t: any) => t.slug === params.slug);
   if (!t) return <div className="section text-center"><h1 className="text-2xl">Talisman not found</h1><Link href="/talismans" className="text-accent">← Back to Talismans</Link></div>;
 

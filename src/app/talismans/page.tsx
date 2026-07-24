@@ -1,11 +1,17 @@
 import Link from 'next/link';
-import { getTalismans } from '@/lib/sanity.queries';
+import { getTalismans, getTalismansCount } from '@/lib/sanity.queries';
+import Pagination from '@/components/pagination';
 import ConnectCta from '@/components/connect-cta';
+
+const PER_PAGE = 12;
 
 export const revalidate = 3600;
 
-export default async function TalismansPage() {
-  const talismans = await getTalismans() || [];
+export default async function TalismansPage({ searchParams }: { searchParams: { page?: string } }) {
+  const page = Math.max(1, parseInt(searchParams.page || '1') || 1);
+  const [talismans, total] = await Promise.all([getTalismans(page, PER_PAGE), getTalismansCount()]);
+  const safeTalismans = talismans || [];
+  const totalPages = Math.max(1, Math.ceil((total || 0) / PER_PAGE));
 
   const iconMap: Record<string, string> = { wealth: '✨', protection: '🛡', health: '🪷', luck: '〰' };
 
@@ -16,9 +22,9 @@ export default async function TalismansPage() {
           <Link href="/" className="hover:text-accent">Home</Link> / <span className="text-ink">Talismans</span>
         </nav>
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Hand-Written Taoist Talismans</h1>
-        <p className="text-xl text-gray-600 mb-12">22 authentic talismans — each hand-written and consecrated at Longhu Mountain</p>
+        <p className="text-xl text-gray-600 mb-12">Authentic talismans — each hand-written and consecrated at Longhu Mountain</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {talismans.map((t: any) => (
+          {safeTalismans.map((t: any) => (
             <Link key={t._id} href={`/talismans/${t.slug}`} className="card hover:border-gold/50 group">
               <div className="h-48 bg-cream rounded-sm overflow-hidden mb-4 flex items-center justify-center">
                 {t.imageUrl ? (
@@ -35,6 +41,7 @@ export default async function TalismansPage() {
             </Link>
           ))}
         </div>
+        <Pagination currentPage={page} totalPages={totalPages} basePath="/talismans" />
         <ConnectCta source="talismans" variant="banner" />
       </div>
     </div>

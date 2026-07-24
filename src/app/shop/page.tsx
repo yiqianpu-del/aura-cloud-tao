@@ -1,13 +1,22 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getProducts, getPageContent } from '@/lib/sanity.queries';
+import { getProducts, getProductsCount, getPageContent } from '@/lib/sanity.queries';
+import Pagination from '@/components/pagination';
 import ConnectCta from '@/components/connect-cta';
+
+const PER_PAGE = 12;
 
 export const revalidate = 3600;
 
-export default async function ShopPage() {
-  const products = await getProducts() || [];
-  const pageContent = await getPageContent('shop');
+export default async function ShopPage({ searchParams }: { searchParams: { page?: string } }) {
+  const page = Math.max(1, parseInt(searchParams.page || '1') || 1);
+  const [products, total, pageContent] = await Promise.all([
+    getProducts(page, PER_PAGE),
+    getProductsCount(),
+    getPageContent('shop'),
+  ]);
+  const safeProducts = products || [];
+  const totalPages = Math.max(1, Math.ceil((total || 0) / PER_PAGE));
   const heading = pageContent?.heading || 'Shop';
   const subheading = pageContent?.subheading || '';
   const chineseSub = (() => {
@@ -23,7 +32,7 @@ export default async function ShopPage() {
         <p className="text-xl text-gray-600 max-w-3xl mb-2">{subheading}</p>
         {chineseSub && <p className="text-sm text-gray-500 italic mb-12">{chineseSub}</p>}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((p: any) => (
+          {safeProducts.map((p: any) => (
             <Link key={p._id} href={`/shop/${p.slug}`} className="card hover:border-gold/50 group">
               <div className="h-48 bg-cream rounded-sm overflow-hidden mb-4">
                 {p.imageUrl ? (
@@ -40,6 +49,7 @@ export default async function ShopPage() {
             </Link>
           ))}
         </div>
+        <Pagination currentPage={page} totalPages={totalPages} basePath="/shop" />
         <ConnectCta source="shop" variant="banner" />
       </div>
     </div>

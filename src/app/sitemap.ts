@@ -1,12 +1,12 @@
 import { services } from '@/data/services';
-import { getSiteSettings, getProducts, getPosts } from '@/lib/sanity.queries';
+import { getSiteSettings, getAllProducts, getAllPosts } from '@/lib/sanity.queries';
 
 export default async function sitemap() {
   const site = await getSiteSettings();
   const baseUrl = site?.url || 'https://auracloudtao.com';
   const now = new Date();
-  const rawProducts = await getProducts().catch(() => null);
-  const rawPosts = await getPosts().catch(() => null);
+  const rawProducts = await getAllProducts().catch(() => null);
+  const rawPosts = await getAllPosts().catch(() => null);
   const products = rawProducts || [];
   const posts = rawPosts || [];
 

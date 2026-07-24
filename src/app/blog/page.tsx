@@ -1,6 +1,9 @@
 import Link from 'next/link';
-import { getPosts } from '@/lib/sanity.queries';
+import { getPosts, getPostsCount } from '@/lib/sanity.queries';
+import Pagination from '@/components/pagination';
 import ConnectCta from '@/components/connect-cta';
+
+const PER_PAGE = 12;
 
 export const revalidate = 3600;
 
@@ -9,10 +12,11 @@ export const metadata = {
   description: 'Guides and insights on Taoist practices, talismans, Qi Men, Feng Shui, and spiritual living.',
 };
 
-export default async function BlogPage() {
-  const posts = await getPosts() || [];
-  const featuredPosts = posts.filter((p: any) => p.featured);
-  const regularPosts = posts.filter((p: any) => !p.featured);
+export default async function BlogPage({ searchParams }: { searchParams: { page?: string } }) {
+  const page = Math.max(1, parseInt(searchParams.page || '1') || 1);
+  const [posts, total] = await Promise.all([getPosts(page, PER_PAGE), getPostsCount()]);
+  const safePosts = posts || [];
+  const totalPages = Math.max(1, Math.ceil((total || 0) / PER_PAGE));
 
   return (
     <main>
@@ -23,40 +27,9 @@ export default async function BlogPage() {
         </div>
       </section>
 
-      {featuredPosts.length > 0 && (
-        <section className="max-w-5xl mx-auto px-4 py-12" aria-label="Featured articles">
-          <h2 className="sr-only">Featured Articles</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {featuredPosts.map((post: any) => (
-              <article key={post._id}>
-                <Link href={`/blog/${post.slug}`} className="group block bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md hover:border-gold/50 transition-all">
-                  {post.imageUrl && (
-                    <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
-                      <div className="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style={{ backgroundImage: `url(${post.imageUrl})` }} role="img" aria-label={post.title} />
-                    </div>
-                  )}
-                  <div className="p-6">
-                    <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
-                      <time dateTime={post.date}>{post.date}</time>
-                      <span>&middot;</span>
-                      <span>{post.readingTime}</span>
-                      <span>&middot;</span>
-                      <span className="text-accent font-medium">{post.category}</span>
-                    </div>
-                    <h2 className="text-xl font-bold text-ink group-hover:text-accent transition-colors mb-2 font-serif">{post.title}</h2>
-                    <p className="text-sm text-gray-600 leading-relaxed">{post.excerpt}</p>
-                  </div>
-                </Link>
-              </article>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section className="max-w-4xl mx-auto px-4 py-8 pb-20" aria-label="All articles">
-        {featuredPosts.length > 0 && <hr className="mb-12 border-gray-200" />}
+      <section className="max-w-4xl mx-auto px-4 py-8 pb-8" aria-label="All articles">
         <div className="space-y-6">
-          {regularPosts.map((post: any) => (
+          {safePosts.map((post: any) => (
             <article key={post._id}>
               <Link href={`/blog/${post.slug}`} className="group block bg-white rounded-lg border border-gray-200 p-6 hover:border-gold/50 transition-all">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
@@ -78,6 +51,9 @@ export default async function BlogPage() {
             </article>
           ))}
         </div>
+
+        <Pagination currentPage={page} totalPages={totalPages} basePath="/blog" />
+
         <ConnectCta source="blog" variant="banner" />
       </section>
     </main>

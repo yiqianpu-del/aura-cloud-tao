@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getPageContent, getPosts } from '@/lib/sanity.queries';
+import { getPageContent, getAllPosts } from '@/lib/sanity.queries';
 import ConnectCta from '@/components/connect-cta';
 
 export const revalidate = 3600;
@@ -11,7 +11,7 @@ export const metadata = {
 
 export default async function CommunityPage() {
   const pc = await getPageContent('community');
-  const posts = await getPosts() || [];
+  const posts = await getAllPosts() || [];
   let community: any = {};
   try { community = pc?.data ? JSON.parse(pc.data) : {}; } catch {}
 

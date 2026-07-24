@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
-import { getProducts, getPageContent } from '@/lib/sanity.queries';
+import { getAllProducts, getPageContent } from '@/lib/sanity.queries';
 import ConnectCta from '@/components/connect-cta';
 
 export const revalidate = 3600;
@@ -15,7 +15,7 @@ export default async function FengShuiPage() {
   let pageData: any = {};
   try { pageData = pc?.data ? JSON.parse(pc.data) : {}; } catch {}
   const fsService = services.find((s: any) => s.category === 'fengshui');
-  const products = await getProducts() || [];
+  const products = await getAllProducts() || [];
   const fsProducts = products.filter((p: any) => p.categories && p.categories.includes('fengshui'));
 
   return (

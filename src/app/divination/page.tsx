@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
-import { getProducts, getPageContent } from '@/lib/sanity.queries';
+import { getAllProducts, getPageContent } from '@/lib/sanity.queries';
 import ConnectCta from '@/components/connect-cta';
 import FreeReading from '@/components/free-reading';
 
@@ -16,7 +16,7 @@ export default async function DivinationPage() {
   let pageData: any = {};
   try { pageData = pc?.data ? JSON.parse(pc.data) : {}; } catch {}
   const divServices = services.filter((s: any) => s.category === 'divination');
-  const products = await getProducts() || [];
+  const products = await getAllProducts() || [];
   const divProducts = products.filter((p: any) => p.categories && p.categories.includes('divination'));
 
   return (

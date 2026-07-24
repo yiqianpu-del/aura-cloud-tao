@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { getPosts, getPostBySlug } from '@/lib/sanity.queries';
+import { getAllPosts, getPostBySlug } from '@/lib/sanity.queries';
 import ConnectCta from '@/components/connect-cta';
 import { PortableText } from '@portabletext/react';
 
 export const revalidate = 3600;
 
 export async function generateStaticParams() {
-  const posts = await getPosts();
+  const posts = await getAllPosts();
   return (posts || []).map((p: any) => ({ slug: p.slug }));
 }
 
