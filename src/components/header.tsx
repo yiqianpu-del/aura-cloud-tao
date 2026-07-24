@@ -1,9 +1,13 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
-import { siteConfig, navigation } from '@/data/site-config';
 
-export default function Header() {
+interface HeaderProps {
+  siteName: string;
+  navigation: { label: string; href: string }[];
+}
+
+export default function Header({ siteName, navigation }: HeaderProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -11,7 +15,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <span className="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-accent"></span>
-          <span className="font-serif font-bold text-lg hidden sm:block">{siteConfig.name}</span>
+          <span className="font-serif font-bold text-lg hidden sm:block">{siteName}</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

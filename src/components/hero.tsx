@@ -1,29 +1,29 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import siteContent from '@/data/siteContent.json';
 import FreeReading from '@/components/free-reading';
 
-export default function Hero() {
-  const hero = siteContent.homepage.hero;
+interface HeroProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  backgroundImage?: string;
+}
+
+export default function Hero({ title, subtitle, description, backgroundImage }: HeroProps) {
+  const heroBg = backgroundImage || '/images/hero-altar.jpg';
+
   return (
     <section className="relative min-h-[90vh] flex items-center bg-ink overflow-hidden">
       {/* Background */}
-      <Image src={hero.backgroundImage} alt="" fill className="object-cover opacity-35 scale-105" priority />
+      <Image src={heroBg} alt="" fill className="object-cover opacity-35 scale-105" priority />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/80 to-ink/85"></div>
 
       {/* Subtle particle overlay */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <svg className="w-full h-full" viewBox="0 0 1440 900" preserveAspectRatio="none">
           {Array.from({ length: 30 }).map((_, i) => (
-            <circle
-              key={i}
-              cx={Math.random() * 1440}
-              cy={Math.random() * 900}
-              r={1 + Math.random() * 2}
-              fill="#c9a96e"
-              className="animate-pulse"
-              style={{ animationDelay: `${i * 0.3}s`, animationDuration: `${3 + Math.random() * 3}s` }}
-            />
+            <circle key={i} cx={Math.random() * 1440} cy={Math.random() * 900} r={1 + Math.random() * 2} fill="#c9a96e" className="animate-pulse"
+              style={{ animationDelay: `${i * 0.3}s`, animationDuration: `${3 + Math.random() * 3}s` }} />
           ))}
         </svg>
       </div>
@@ -38,17 +38,14 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4">
-            {hero.title}
+            {title}
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-2">{hero.subtitle}</p>
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-2">{subtitle}</p>
 
-          {/* Description — two lines that hook the US audience */}
           <p className="text-sm md:text-base text-gray-400 max-w-xl mb-6 leading-relaxed">
-            {hero.description}
+            {description}
           </p>
 
           {/* Trust signals */}
@@ -84,7 +81,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Free Reading hook — low-friction entry point */}
+          {/* Free Reading hook */}
           <FreeReading variant="hero" />
         </div>
       </div>

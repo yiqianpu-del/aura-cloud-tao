@@ -2,21 +2,30 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { siteConfig } from "@/data/site-config";
+import { getSiteSettings } from "@/lib/sanity.queries";
 
-export const metadata: Metadata = {
-  title: { default: siteConfig.name, template: `%s | ${siteConfig.name}` },
-  description: siteConfig.description,
-  metadataBase: new URL(siteConfig.url),
-  openGraph: { title: siteConfig.name, description: siteConfig.description, type: "website", locale: "en_US" },
-  twitter: { card: "summary_large_image", title: siteConfig.name, description: siteConfig.description },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const site = await getSiteSettings();
+  const name = site?.name || 'Aura Cloud Tao';
+  const description = site?.description || '';
+  const url = site?.url || 'https://auracloudtao.com';
+  return {
+    title: { default: name, template: `%s | ${name}` },
+    description,
+    metadataBase: new URL(url),
+    openGraph: { title: name, description, type: "website", locale: "en_US" },
+    twitter: { card: "summary_large_image", title: name, description },
+  };
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const site = await getSiteSettings();
+  const siteName = site?.name || 'Aura Cloud Tao';
+  const navigation = site?.navigation || [];
+
   return (
    <html lang="en" suppressHydrationWarning>
      <head>
-        {/* Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -30,9 +39,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen flex flex-col">
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGZNSLKK" height="0" width="0" style={{display:'none',visibility:'hidden'}} /></noscript>
-        <Header />
+        <Header siteName={siteName} navigation={navigation} />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <Footer siteName={siteName} tagline={site?.tagline || ''} />
       </body>
     </html>
   );

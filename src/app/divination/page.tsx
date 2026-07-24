@@ -2,15 +2,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
 import { products } from '@/data/products';
-import siteContent from '@/data/siteContent.json';
+import { getPageContent } from '@/lib/sanity.queries';
 import ConnectCta from '@/components/connect-cta';
 import FreeReading from '@/components/free-reading';
 
-const s = siteContent.services;
+export const revalidate = 3600;
 
 export const metadata = { title: 'Qi Men Dun Jia Divination | Sacred Tao Wisdom', description: 'Ancient Chinese strategic divination — Qi Men Oracle card readings, energy audits, and classical physiognomy.' };
 
-export default function DivinationPage() {
+export default async function DivinationPage() {
+  const pc = await getPageContent('divination');
+  const heading = pc?.heading || 'Divination';
+  const subheading = pc?.subheading || '';
+  let pageData: any = {};
+  try { pageData = pc?.data ? JSON.parse(pc.data) : {}; } catch {}
   const divServices = services.filter((s: any) => s.category === 'divination');
   const divProducts = products.filter((p: any) => p.categories.includes('divination'));
 
@@ -18,9 +23,9 @@ export default function DivinationPage() {
     <div className="section">
       <div className="container">
         <nav className="text-sm text-gray-500 mb-8"><Link href="/" className="hover:text-accent">Home</Link> / <span className="text-ink">Qi Men Divination</span></nav>
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">{s.divinationPage.heading}</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mb-2">{s.divinationPage.subheading}</p>
-        <p className="text-sm text-gray-500 italic mb-12">{s.divinationPage.chineseSub}</p>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">{heading}</h1>
+        <p className="text-xl text-gray-600 max-w-3xl mb-2">{subheading}</p>
+        {pageData.chineseSub && <p className="text-sm text-gray-500 italic mb-12">{pageData.chineseSub}</p>}
 
         <h2 className="text-2xl font-bold mb-6">Divination Services</h2>
         <div className="grid gap-8 mb-16">
@@ -52,8 +57,7 @@ export default function DivinationPage() {
         </div>
 
         <FreeReading variant="section" />
-
-                <ConnectCta source="divination" variant="banner" />
+        <ConnectCta source="divination" variant="banner" />
       </div>
     </div>
   );

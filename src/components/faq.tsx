@@ -1,14 +1,21 @@
-import siteContent from '@/data/siteContent.json';
+interface FaqItem { q: string; a: string; }
 
-export default function FAQ() {
-  const data = siteContent.homepage.faq;
+interface FaqProps {
+  heading?: string;
+  subheading?: string;
+  faqs?: FaqItem[];
+}
+
+export default function Faq({ heading, subheading, faqs }: FaqProps) {
+  if (!faqs?.length) return null;
+
   return (
     <section className="section bg-cream" id="faq">
       <div className="container max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">{data.heading}</h2>
-        <p className="section-sub mb-12">{data.subheading}</p>
+        {heading && <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">{heading}</h2>}
+        {subheading && <p className="section-sub mb-12">{subheading}</p>}
         <div className="space-y-4">
-          {data.faqs.map((faq: any, i: number) => (
+          {faqs.map((faq, i) => (
             <details key={i} className="card group cursor-pointer">
               <summary className="font-semibold text-ink list-none flex items-center justify-between">
                 <span>{faq.q}</span>
